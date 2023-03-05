@@ -31,19 +31,11 @@ Existem ainda outras obras que são consideradas desprotegidas e acessíveis a t
 ## Problema
 O problema que esperamos resolver é a dificuldade de se encontrar, atualmente, uma plataforma que reúna obras literárias de domínio publico para os amantes da leitura de obras literárias, quadrinhos e estórias diversas.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
 ## Objetivos
 
 - Criar uma plataforma mobile intuitiva que possibilite aos usuários pesquisar e encontrar obras literárias de domínio publico de seu interesse. 
 - Possibilitar que autores que não desejam gozar de seus direitos de prorpiedade possam cadastrar suas obras e expô-las ao público. 
 - Conectar pessoas em comunidades para discussão sobre as obras, de modo a difundir a cultura.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
@@ -63,15 +55,7 @@ Concatenando o exposto acima, são algumas das vantagens do divulgação de trab
 
 Diante disso, sentimos a necessidade em desenvolver uma plataforma com intuito de expandir o acesso a obras literárias de domínio publico de forma rápida, democrática e gratuita possibilitando a promoção de uma série de campos da existência humana, incluindo o desenvolvimento cognitivo, a percepção sobre o mundo, o respeito às diferenças e o estímulo à criatividade.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
-
 ## Público-Alvo
 
 O público-alvo do projeto é a população como um todo, pricipalmente estudantes e autores que desejam que seus trabalhos sejam divulgados livremente.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
