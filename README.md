@@ -1,4 +1,4 @@
-# Bookcasee
+# Bookcase
 
 `CURSO`
 
