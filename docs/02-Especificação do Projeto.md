@@ -109,7 +109,7 @@ A matriz deve contemplar todos os elementos relevantes que fazem parte do sistem
 
 Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordenar tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
 
-<img src="/src/img/gestao-de-tempo.png">
+<img src="/img/gestao-de-tempo.png">
 
 ## Gerenciamento de Equipe
 A equipe cumprirá suas tarefas de acordo com as habilidades e características subjetivas de cada membro, a fim de que cada um contribua e produza o melhor trabalho a ser incorporado ao projeto e consequentemente ao produto final. O gerenciamento das tarefas será registrado para que a produtividade e a qualidade sejam mantidas durante todo o desenvolvimento do projeto.
