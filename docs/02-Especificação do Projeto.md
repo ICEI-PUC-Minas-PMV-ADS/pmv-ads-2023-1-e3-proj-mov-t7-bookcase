@@ -44,16 +44,6 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 > - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
 >
 
-## Histórias de Usuários
-
-Com base na análise das personas foram identificadas as seguintes histórias de usuários:
-
-| `PERSONA`         | `FUNCIONALIDADE`                                                                    | `MOTIVO/VALOR`                                                                                                     |
-| ----------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Joana Alves Pereira       | Ter uma plataforma móvel para leitura das obras requisitadas por sua escola. | Poder ter a praticidade para ler as obras a qualquer momento, principalmente no seu deslocamento casa-escola e escola-casa, que realiza utilizando meios de transporte coletivo urbano. |
-| Dra. Beatriz Lima    | Ter um modo de disponibilizar amostras de suas obras para possíveis compradores.                         | Aumentar a divulgação de seu trabalho.                     |
-| João Lucas Melo    | Conseguir ler obras literárias enquanto está no carro ou enquante espera no saguão do terminal do aeroporto pela saída de seu vôo, sem ter que carregar diversos volumes de livros impressos.                                | Ter praticidade para exercer seu hobby de leitura.                                                                 |
-
 ## Requisitos
 
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
