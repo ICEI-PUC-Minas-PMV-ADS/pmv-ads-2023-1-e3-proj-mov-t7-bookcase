@@ -96,7 +96,7 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 | RNF-004 | A aplicação deverá ser compatível com diversos navegadores.                                      | MÉDIA      |
 
 ## Diagrama de Casos de Uso
-<img src="/src/img/diagrama-de-casos-de-uso.jpg">
+<img src="/img/diagrama-de-casos-de-uso.jpg">
 
 ## Gerenciamento de Projeto
 Utilizando o PMBoK padrão todo o projeto será gerenciado utilizando planilhas integradas que possibilitarão a visualização da evolução dos trabalhos, bem como a possibilidade de melhoria prática a cada implementação. Para tal, todas as informações referentes ao cronograma, previsão de custos, recursos e equipe envolvidas, atividades ocupadas, reuniões, produção de documentos, entre outros, serão devidamente registradas com o objetivo de construir base documental sólida a fim de que o desenvolvimento do projeto transcorra obedecendo padrões e normas de excelência e qualidade.
