@@ -18,9 +18,9 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Thamara Machado Rocha
 * Natalia Liberato
 
-## Vitor Mangaravite 
+## Professor
 
-* 
+* Vitor Mangaravite
 
 ## Instruções de utilização
 
