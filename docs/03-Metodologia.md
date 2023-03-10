@@ -86,7 +86,7 @@ Os editores de código utilizados pela equipe são Visual Stiduo, em sua versão
 Foram definidos como canais de comuniação entre a equipe: Aplicativo de mensagens escritas/áudio [WhatsApp](https://web.whatsapp.com/). Aplicativo de conversa VoIP [Discord](https://discord.com/). Software para envio de mensagens escritas/realização de reuniões [Microsoft Teams](https://teams.microsoft.com/_). A escolha do meio de comunicação a ser utilizado irá variar a dependender do objetivo, se se tratar de apenas uma mensagem de aviso aos integrantes do grupo ou uma reunião entre todos so membros.
 
 ### Ferramentas de desenho de tela (_wireframing_)
-Para o desenho de tela e fluxograma da experiência de uso foi escolhida a plataforma [Marvel](https://marvelapp.com/).
+Para o desenho de tela e fluxograma da experiência de uso foram escolhidas as plataformas [Marvel](https://marvelapp.com/) e [Figma](https://www.figma.com/).
 
  
 > **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
