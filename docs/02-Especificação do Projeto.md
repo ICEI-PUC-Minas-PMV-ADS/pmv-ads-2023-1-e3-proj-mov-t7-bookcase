@@ -69,7 +69,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RNF-002 | A aplicação deve ser desenvolvida em ReactJS                                                     | ALTA       |
 | RNF-003 | A aplicação deverá ser responsiva e poderá ser acessada em diversos dispositivos e equipamentos. | ALTA       |
 | RNF-004 | A aplicação deverá ser compatível com diversos navegadores.                                      | MÉDIA      |
-|RNF-008| A aplicação deve permitir o acesso apenas de usuários cadastrados |ALTA|
+| RNF-005 | A aplicação deve permitir o acesso apenas de usuários cadastrados |ALTA|
 
 
 ## Restrições
