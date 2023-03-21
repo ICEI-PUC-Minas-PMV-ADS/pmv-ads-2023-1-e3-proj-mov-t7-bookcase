@@ -59,6 +59,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-009 | A aplicação deve permitir o usuário a editar seu perfil onde o mesmo pode ter status de público ou privado.       | BAIXO      |
 | RF-010 | A aplicação deve permitir o usuário a editar, excluir e mandar seu perfil para outras pessoas.                    | ALTA       |
 | RF-011 | A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada juntamente com a imagem da capa.| MEDIO      |
+| RF-012 | A aplicação permite o logout de usuário.                                                                           | MEDIO      |
 
 ### Requisitos não Funcionais
 
@@ -76,10 +77,11 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-| RNF-001 | A aplicação deverá ser de fácil leitura e entendimento.                                          | ALTA       |
-| RNF-002 | A aplicação deve ser desenvolvida em ReactJS.                                                    | ALTA       |
-| RNF-003 | A aplicação deverá ser responsiva e poderá ser acessada em diversos dispositivos e equipamentos. | MÉDIA      |
-| RNF-004 | A aplicação deverá ser compatível com diversos navegadores.                                      | MÉDIA      |
+| 01 | A aplicação deverá ser de fácil leitura e entendimento.                                          
+| 02 | A aplicação deve ser desenvolvida em ReactJS.                                                    
+| 03 | A aplicação deverá ser responsiva e poderá ser acessada em diversos dispositivos e equipamentos.
+| 04 | A aplicação deverá ser compatível com diversos navegadores.                                     
+| 05 | A equipe usará o modelo Kanban para o gerenciamento do projeto.                                  
 
 ## Diagrama de Casos de Uso
 <img src="/img/diagrama-de-casos-de-uso.jpg">
