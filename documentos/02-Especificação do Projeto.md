@@ -146,7 +146,7 @@ Com base em todo o escopo produzido anteriormente, os custos do projeto serão g
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Atualmente, existem poucas aplicações que permitem o acesso a obras de domínio publico que podem ser acessados pela internet. Os existentes são aplicações que não oferecem de forma ampla um numero significativo de obras e de recursos que permitem que o leitor possa gerenciar de forma fácil e eficiente as obras lidas e as que ele deseja ler.
 
 ### Descrição Geral da Proposta
 
