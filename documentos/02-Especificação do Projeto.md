@@ -154,17 +154,19 @@ Atualmente, existem poucas aplicações que permitem o acesso a obras de domíni
 A proposta do Bookcase é divulgar e propagar obras de domínio público, e assim, auxiliar como um maior acesso ao conhecimento e à informação para todos. 
 Além disso, como não há restrições aos direitos de uso de materiais de domínio público, todos têm livre acesso a eles, ajudando a fomentar a inovação e a criatividade dentro da sociedade na totalidade. Finalmente, ter obras no domínio público ajuda a garantir que essas ideias estejam disponíveis para sempre em vez de serem perdidas devido à expiração dos direitos autorais ou outras restrições aos direitos de uso.
 
-### Processo 1 – NOME DO PROCESSO
+### Processo 1 – CADASTRO DO USUARIO
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
 
-![Processo 1](img/02-bpmn-proc1.png)
+![Processo 1](img/CadastroUsuario.jpg)
 
-### Processo 2 – NOME DO PROCESSO
+### Processo 2 – EDITAR DADOS USUÁRIO
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
 
-![Processo 2](img/02-bpmn-proc2.png)
+![Processo 2](img/EditarInformações.jpg)
+
+### Processo 3 - Salvar obra para leitura
+
+! (img/CadastroObraAtual.jpg)
 
 ## Indicadores de Desempenho
 
