@@ -150,7 +150,9 @@ Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o 
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+
+A proposta do Bookcase é divulgar e propagar obras de domínio público, e assim, auxiliar como um maior acesso ao conhecimento e à informação para todos. 
+Além disso, como não há restrições aos direitos de uso de materiais de domínio público, todos têm livre acesso a eles, ajudando a fomentar a inovação e a criatividade dentro da sociedade na totalidade. Finalmente, ter obras no domínio público ajuda a garantir que essas ideias estejam disponíveis para sempre em vez de serem perdidas devido à expiração dos direitos autorais ou outras restrições aos direitos de uso.
 
 ### Processo 1 – NOME DO PROCESSO
 
