@@ -1,11 +1,36 @@
 # Plano de Testes de Usabilidade
+Os testes de usabilidade são feitos para avaliar o desempenho da plataforma para o usuário final.
+Busca-se definir critérios para as realizações de testes futuros.
 
-O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
+## Objetivo : 
+O objetivo desses testes, sera conferir e realizar possíveis melhorias, assim como identificar possíveis problemas a fim de criar uma melhor experiência e interações ao usuário final, criando assim um ótimo ambiente para leitores e amantes de livros. 
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
+Será possível observar: 
+* Quais são os possíveis problemas de interface.
+* Falhas em botões, links entre outras interações.
+* intuitividade da plataforma. 
 
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+
+## Critérios : 
+
+Os critérios para a realizaçao deste teste são : 
+
+* Pessoas que usam plataformas para aquisição de livros.
+* Conexão a internet.
+* Possuir um desktop ou smartphone.
+* O teste realizado sera remoto.
+
+## Seleção de usuários : 
+Os testes serão realizados com 5 indivíduos, onde sera possível achar até 75% dos problemas da plataforma.
+
+
+
+
+
+
+
+
+
+
+
+
