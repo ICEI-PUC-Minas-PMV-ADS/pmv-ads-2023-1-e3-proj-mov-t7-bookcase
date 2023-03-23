@@ -156,17 +156,20 @@ Além disso, como não há restrições aos direitos de uso de materiais de dom�
 
 ### Processo 1 – CADASTRO DO USUARIO
 
+![CadastroUsuario](https://user-images.githubusercontent.com/102702197/227388684-40292651-1b20-4411-a47f-323515418508.jpg)
 
-![Processo 1](img/CadastroUsuario.jpg)
+
 
 ### Processo 2 – EDITAR DADOS USUÁRIO
 
+![EditarInformacões](https://user-images.githubusercontent.com/102702197/227388654-9892a9dd-2cc9-4a7c-8608-e83a2ea66468.jpg)
 
-![Processo 2](img/EditarInformações.jpg)
+
 
 ### Processo 3 - Salvar obra para leitura
 
-! (img/CadastroObraAtual.jpg)
+![CadastroObraAtual](https://user-images.githubusercontent.com/102702197/227388600-05af3e63-a050-47a2-9854-8535d88f946b.jpg)
+
 
 ## Indicadores de Desempenho
 
