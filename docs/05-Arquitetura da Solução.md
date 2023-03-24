@@ -13,7 +13,7 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
 
-<img src="/img/er.jpg">
+<img src="/img/22er.jpg">
 
 ## Esquema Relacional
 
