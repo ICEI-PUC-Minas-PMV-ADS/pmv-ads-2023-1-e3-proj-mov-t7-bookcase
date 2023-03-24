@@ -1,4 +1,4 @@
-<img src="/img/icon.png">
+<img src="/img/icon.png" width="100">
 # Bookcase
 
 `Análise e Desenvolvimento de Sistemas`
