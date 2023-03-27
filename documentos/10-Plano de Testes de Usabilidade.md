@@ -32,11 +32,15 @@ Cada membro do grupo aplicará o teste para um indivíduo, desta forma teremos u
 A taxa de sucesso será mensurada no caso de pesquisa e avaliação do conteudo será considerado a pesquisa e encontro do conteudo corretamente e preenchimento do cadastro para avaliação, e no caso de submissão de conteudo para analise e posterior publicação da fonte na aplicação desenvolvida, será considerando o correto preenchimento do formulário e envio do material para analise e posterior recebimento do e-mail com o resultado da analise. Para a coleta de dados empíricos, este processo será gravado pelo condutor do teste, o tempo médio que um usuário leva pra executar tais tarefas e analisar a usabilidade da aplicação interativa e identificar as principais dificuldades apontadas pelo usuário, visando minimizar os erros, alcançar uma navegação fluída e intuitiva.
 
 
+## Análise da descoberta:
+
+O grupo em conjunto irá analisar os vídeos da gravação de execução do teste, para que por meio da observação possam ser identificados eventuais pontos de melhoria ou erros da aplicação interativa. O report contempla o formato do relatório de avaliação dos testes de usabilidade e as decisões que ele orienta.
 
 
+## Análise do report:
 
+Mensuração dos resultados obtidos, como:
 
-
-
+• Análise do tempo que o usuário levou para execução da tarefa. • Mensuração do grau de satisfação do usuário e insatisfação.
 
 
