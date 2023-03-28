@@ -11,7 +11,7 @@ Os atributos do projeto foram desenvolvidos a partir das plataformas GitHub e Fi
 --------- | ---------- |  
 | Repositório de código fonte | [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t7-bookcase) |
 | Documentos do projeto | [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t7-bookcase/tree/main/docs) |
-| Gerenciamento de Projeto | [Trello]()   |
+| Gerenciamento de Projeto | [Trello](https://trello.com/b/9iTCPz3Z/untitled-board)   |
 | Comunicação e Reuniões | [Teams](https://teams.microsoft.com/_), [Discord](https://discord.com/), [WhatsApp](https://web.whatsapp.com/) |
 
 ## Controle de Versão
