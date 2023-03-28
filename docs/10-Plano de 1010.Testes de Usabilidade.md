@@ -28,45 +28,4 @@ Os testes serão realizados com 5 indivíduos, onde sera possível achar até 75
 
 Cada membro do grupo aplicará o teste para um indivíduo, desta forma teremos uma amostra de 5 pessoas avaliando a aplicação interativa no que diz respeito a experiência do usuário. O usuário em questão acessará a aplicação e poderá pesquisar o conteudo de determinado assunto, se cadastrar para avaliação do conteudo ou entao se cadastrar para submeter um conteudo à analise para posterior publicação na aplicação.
 
-A taxa de sucesso será mensurada no caso de pesquisa e avaliação do conteudo será considerado a pesquisa e encontro do conteudo corretamente e preenchimento do cadastro para avaliação, e no caso de submissão de conteudo para analise e posterior publicação da fonte na aplicação desenvolvida, será considerando o correto preenchimento do formulário e envio do material para analise e posterior recebimento do e-mail com o resultado da analise. Para a coleta de dados empíricos, este processo será gravado pelo condutor do teste, o tempo médio que um usuário leva pra executar tais tarefas e analisar a usabilidade da aplicação interativa e identificar as principais dificuldades apontadas pelo usuário, visando minimizar os erros, alcançar uma navegação fluída e intuitiva.
-
-
-
-|  **Caso de Teste**  |  **CT-01  - FAZER CADASTRO**                                                                              |
-|--|--|
-| Objetivo do Teste:   | Verificar se o usuário consegue se cadastrar de maneira satisfatória sem erros.                   | 
-| Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) Preencher os campos necessários para cadastro 3) confirmar funcionabilidade  |
-| Critérios de Êxito:  | o usuario utilizará a aplicação e realizará seu cadastro forma rapida e eficiente e clara
-
-|  **Caso de Teste**  |  **CT-02  - FAZER LOGIN CORRETAMENTE**                                                                             
-|--|--|
-| Objetivo do Teste:   | Verificar se o usuário consegue  logar e deslogar corretamente.                   | 
-| Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) Preencher os campos necessários para login 3) acessar a area do usuario e visualiza-lo  |
-| Critérios de Êxito:  | o usuario utilizará a aplicação e irá logar e deslogar de forma rapida e eficiente e clara  
-
-
-|  **Caso de Teste**  |  **CT-03  - PESQUISAR OBRA**                                                                              |
-|--|--|
-| Objetivo do Teste:   | Verificar se o usuário consegue pesquisar de maneira satisfatória sem erros e rápida obras literárias corretamente.                   | 
-| Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) Preencher os campos necessários para encontrar o conteúdo de interesse 3) filtrar o conteudo de interesse 4) selecionar conteúde de interesse e visualiza-lo  |
-| Critérios de Êxito:  | o usuario utilizará a aplicação e encontrará conteúdo que lhe interesse de forma rapida e eficiente e clara   
-
-
-|  **Caso de Teste**  |  **CT-04  -  AVALIAR OBRA**                                                                              |
-|--|--|
-| Objetivo do Teste:   | Verificar se o usuário consegue de forma eficiente e rapida  avaliar a obra encontrada e lida               | 
-| Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) filtrar o conteudo de interesse 3) selecionar conteúdo de interesse e visualiza-lo 4) Acessar a pagina de cadastro de usuario (estudante) 5) fazer cadastro de forma rapida e eficiente  6) Retornar para a página do conteúdo de interesse anteriormente visualizado 7) avaliar o conteúdo de interesse |
-| Critérios de Êxito:  | o usuario utilizará a aplicação e avaliará o  conteúdo que lhe interesse de forma rapida e eficiente                                |
-
-
-## Análise da descoberta:
-
-O grupo em conjunto irá analisar os vídeos da gravação de execução do teste, para que por meio da observação possam ser identificados eventuais pontos de melhoria ou erros da aplicação interativa. O report contempla o formato do relatório de avaliação dos testes de usabilidade e as decisões que ele orienta.
-
-
-## Análise do report:
-
-Mensuração dos resultados obtidos, como:
-
-• Análise do tempo que o usuário levou para execução da tarefa. • Mensuração do grau de satisfação do usuário e insatisfação.
-
+A taxa de sucesso será mensurada no caso de pesquisa e avaliação do conteudo será considerado a pesquisa e encontro do conteudo corretamente e preenchimento do cadastro para avaliação, e no caso de submissão de co
