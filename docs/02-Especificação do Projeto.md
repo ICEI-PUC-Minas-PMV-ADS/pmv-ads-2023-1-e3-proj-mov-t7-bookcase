@@ -55,11 +55,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-005 | A aplicação deve permitir o usuário acessa um feed de recomendações de livros.                                    | ALTA       |
 | RF-006 | A aplicação deve permitir o usuário recuperar sua senha atráves do email cadastrado.                              | ALTA       |
 | RF-007 | A aplicação deve permitir o usuário criar uma lista de livros para ler mais tarde.                                | ALTA       |
-| RF-008 | A aplicação deve permitir o usuário criar sua conta e acessar seu histórico de leituras.                          | ALTA       |
-| RF-009 | A aplicação deve permitir o usuário a editar seu perfil onde o mesmo pode ter status de público ou privado.       | BAIXO      |
-| RF-010 | A aplicação deve permitir o usuário a editar, excluir e mandar seu perfil para outras pessoas.                    | ALTA       |
-| RF-011 | A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada juntamente com a imagem da capa.| MEDIO      |
-| RF-012 | A aplicação permite o logout de usuário.                                                                           | MEDIO      |
+| RF-008 | A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada juntamente com a imagem da capa.| MEDIO      |
+| RF-009 | A aplicação permite o logout de usuário.                                                                          | MEDIO      |
 
 ### Requisitos não Funcionais
 
