@@ -1,6 +1,6 @@
 ## Plano de Testes de Software
 
-| Casos de Teste | CT-01 - Acessar tela de login e cadastro de usuário //  RF-006 - A aplicação deve permitir o usuário recuperar sua senha atráves do email cadastrado |
+| Casos de Teste | CT-01 - Acessar tela de login e cadastro de usuário |
 |--------------------|------------------------------------|
 |`Requisitos Associados` | RF-001 - O sistema terá tela de Login e senha // RNF-005 - A plataforma interativa deve permitir o acesso apenas de usuários cadastrados |
 |`Objetivo do teste` | Testar o acesso a tela de login, criar um usário e senha e testar a recuperação de senha |
@@ -63,5 +63,20 @@
 ||5 - Selecionar livros que deseja |
 ||5 - Clicar em "Ok" |
 |`Critério de Êxito` | Recomendações visualizadas e Lista criada com sucesso. |
+
+
+| Casos de Teste | CT-05 - Logout|
+|--------------------|------------------------------------|
+|`Requisitos Associados` | RF - 009 A aplicação permite o logout de usuário |
+|`Objetivo do teste` | Testar o acesso a tela de login e efetuar logout |
+|`Passos` | 
+||1 - Acessar o aplicativo móvel |
+||2 - Clicar em "Entrar"|
+||3 - Informar o Usuário e Senha |
+||4 - Clicar no botão "Entrar" |
+||5 - Clicar no botão " Filtrar " |
+||6 - Acessar a tela inicial |
+||7 - Clicar em logout |
+|`Critério de Êxito` | Logout efetuado com sucesso |
 
 
