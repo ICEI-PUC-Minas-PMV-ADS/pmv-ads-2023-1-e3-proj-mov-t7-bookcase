@@ -33,7 +33,7 @@
 
 | Casos de Teste | CT-03 - Fazer upload, visualizar upload de documentos |
 |--------------------|------------------------------------|
-|`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-011 - A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada juntamente com a imagem da capa |
+|`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-008 - A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada juntamente com a imagem da capa |
 |`Objetivo do teste` | Cadastro de documentos |
 |`Passos` | 
 ||1 - Acessar o aplicativo móvel |
