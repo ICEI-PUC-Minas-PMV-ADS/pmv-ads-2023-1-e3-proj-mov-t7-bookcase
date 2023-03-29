@@ -33,7 +33,7 @@
 
 | Casos de Teste | CT-03 - Fazer upload, visualizar upload de documentos |
 |--------------------|------------------------------------|
-|`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-011 | A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada juntamente com a imagem da capa |
+|`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-011 - A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada juntamente com a imagem da capa |
 |`Objetivo do teste` | Cadastro de documentos |
 |`Passos` | 
 ||1 - Acessar o aplicativo móvel |
@@ -51,7 +51,7 @@
 
 | Casos de Teste | CT-04 - Recomendações de livros e criar uma lista de livros para leitura |
 |--------------------|------------------------------------|
-|`Requisitos Associados` | RF-005 | A aplicação deve permitir o usuário acessar um feed de recomendações de livros // RF-007 | A aplicação deve permitir o usuário criar uma lista de livros para ler mais tarde.                                                                     |
+|`Requisitos Associados` | RF-005 | A aplicação deve permitir o usuário acessar um feed de recomendações de livros // RF-007 A aplicação deve permitir o usuário criar uma lista de livros para ler mais tarde.                                                                     |
 |`Objetivo do teste` | Recomendação de livros e lista para leitura  |
 |`Passos` | 
 ||1 - Acessar o aplicativo móvel |
@@ -63,3 +63,5 @@
 ||5 - Selecionar livros que deseja |
 ||5 - Clicar em "Ok" |
 |`Critério de Êxito` | Recomendações visualizadas e Lista criada com sucesso. |
+
+
