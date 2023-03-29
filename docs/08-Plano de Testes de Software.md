@@ -33,7 +33,7 @@
 
 | Casos de Teste | CT-03 - Fazer upload, visualizar upload de documentos |
 |--------------------|------------------------------------|
-|`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-003 - O sistema permite o lançamento de créditos |
+|`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-003 - O sistema permite o lançamento de créditos // RF-011 | A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada juntamente com a imagem da capa |
 |`Objetivo do teste` | Realizar lançamentos e filtrar a visualização por mês |
 |`Passos` | 
 ||1 - Acessar o aplicativo móvel |
@@ -44,11 +44,12 @@
 ||6 - Preencher os campos obrigatórios |
 ||7 - Clicar no botão "Inserir" | 
 ||8 - Selecionar a categoria desejada para cadastro |
-||9 - Clicar no botão "Ok" |
+||9 - Preencher todas as informações necessárias |
+||10 - Clicar no botão "Ok" |
 |`Critério de Êxito` | Documento cadastrado com sucesso. |
 
 
-| Casos de Teste | CT-04- |
+| Casos de Teste | CT-04 - A aplicação deve permitir o usuário acessar um feed de recomendações de livros e criar uma lista de livros para ler mais tarde |
 |--------------------|------------------------------------|
 |`Requisitos Associados` | RF- |
 |`Objetivo do teste` |  |
