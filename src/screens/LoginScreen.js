@@ -12,6 +12,9 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 const LoginScreen = ({ navigation }) => {
+  useEffect(() => {
+    navigation.navigate("Home");
+  }, []);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 

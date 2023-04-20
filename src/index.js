@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 
 const authRoutes = require("./routes/authRoutes");
+const bookRoutes = require("./routes/bookRoutes");
 const db = require("./db");
 
 // Configurações do servidor
@@ -11,6 +12,9 @@ app.use(cors());
 
 // Rota de autenticação
 app.use("/auth", authRoutes);
+
+// Rotas de livros
+app.use("/books", bookRoutes);
 
 // Iniciar o servidor
 db.getConnection()
