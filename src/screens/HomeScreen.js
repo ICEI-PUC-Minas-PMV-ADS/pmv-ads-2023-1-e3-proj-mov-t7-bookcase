@@ -6,6 +6,7 @@ import {
   FlatList,
   Dimensions,
   TouchableOpacity,
+  TextInput,
 } from "react-native";
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
 import axios from "axios";
@@ -14,6 +15,7 @@ const { width } = Dimensions.get("window");
 
 const HomeScreen = ({ navigation }) => {
   const [livros, setLivros] = useState([]);
+  const [busca, setBusca] = useState("");
 
   useEffect(() => {
     async function fetchData() {
@@ -44,6 +46,20 @@ const HomeScreen = ({ navigation }) => {
     </View>
   );
 
+  const filtrarLivros = (livros, busca) => {
+    if (busca.length === 0) {
+      return livros;
+    }
+    const resultado = livros.filter(
+      (livro) =>
+        livro.titulo.toLowerCase().includes(busca.toLowerCase()) ||
+        livro.autor.toLowerCase().includes(busca.toLowerCase()) ||
+        livro.descricao.toLowerCase().includes(busca.toLowerCase()) ||
+        livro.link_download.toLowerCase().includes(busca.toLowerCase())
+    );
+    return resultado;
+  };
+
   return (
     <View style={styles.container}>
       {/* Barra de navegação */}
@@ -59,9 +75,16 @@ const HomeScreen = ({ navigation }) => {
           <FontAwesome name="search" size={24} color="black" />
         </TouchableOpacity>
       </View>
+      {/* Campo de busca */}
+      <TextInput
+        style={styles.busca}
+        placeholder="Buscar livros"
+        onChangeText={(text) => setBusca(text)}
+        value={busca}
+      />
       {/* Lista de livros */}
       <FlatList
-        data={livros}
+        data={filtrarLivros(livros, busca)}
         renderItem={renderItem}
         keyExtractor={(item) => item.id.toString()}
         contentContainerStyle={{ width }}
@@ -74,8 +97,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
     padding: 20,
   },
   item: {
@@ -90,19 +111,25 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     fontWeight: "bold",
+    color: "#333",
+    marginBottom: 5,
   },
   author: {
     fontSize: 16,
     fontStyle: "italic",
+    color: "#555",
+    marginBottom: 5,
   },
   description: {
     marginTop: 10,
     fontSize: 16,
+    color: "#444",
   },
   downloadLink: {
     marginTop: 10,
     fontSize: 14,
     color: "blue",
+    textDecorationLine: "underline",
   },
   navbar: {
     flexDirection: "row",
@@ -116,6 +143,37 @@ const styles = StyleSheet.create({
   },
   navTitle: {
     fontSize: 20,
+    fontWeight: "bold",
+    color: "#333",
+  },
+  searchContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    borderWidth: 1,
+    borderColor: "#ccc",
+    borderRadius: 10,
+    paddingHorizontal: 10,
+    marginBottom: 20,
+  },
+  searchInput: {
+    flex: 1,
+    height: 40,
+    fontSize: 16,
+    paddingLeft: 10,
+  },
+  searchIcon: {
+    paddingRight: 10,
+  },
+  searchButton: {
+    marginLeft: 10,
+    backgroundColor: "#2ecc71",
+    paddingHorizontal: 15,
+    paddingVertical: 10,
+    borderRadius: 10,
+  },
+  searchButtonText: {
+    color: "#fff",
+    fontSize: 16,
     fontWeight: "bold",
   },
 });
