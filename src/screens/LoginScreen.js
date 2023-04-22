@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
 import axios from "axios";
 
@@ -29,6 +29,9 @@ const LoginScreen = ({ navigation }) => {
         // Se a autenticação foi bem sucedida, navegue para a próxima tela
         if (response.status === 200) {
           navigation.navigate("Home");
+        } else {
+          // Caso contrário, exiba uma mensagem de erro
+          alert("Email ou senha incorretos");
         }
       } catch (err) {
         console.error(err);
