@@ -1,5 +1,5 @@
 const express = require("express");
-const pool = require("../db");
+const pool = require("../database/db");
 const router = express.Router();
 
 // Rota para listar todos os livros

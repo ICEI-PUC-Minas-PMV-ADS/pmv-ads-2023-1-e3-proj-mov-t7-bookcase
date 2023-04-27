@@ -20,7 +20,7 @@ const HomeScreen = ({ navigation }) => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get("http://localhost:3001/books/livros");
+        const response = await axios.get("http://localhost:3000/books/livros");
         setLivros(response.data);
       } catch (err) {
         console.error(err);

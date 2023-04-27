@@ -1,121 +1,105 @@
 import React, { useState, useEffect } from "react";
-import { StatusBar } from "expo-status-bar";
+import { View, Text, TextInput, Button, StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
 
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  StyleSheet,
-} from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-
-const LoginScreen = ({ navigation }) => {
-  useEffect(() => {
-    navigation.navigate("Home");
-  }, []);
+const LoginScreen = () => {
+  const navigation = useNavigation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
-  const handleLogin = () => {
-    const handleLogin = async () => {
-      try {
-        const response = await axios.post("http://localhost:3000/auth/login", {
-          email,
-          password,
-        });
-
-        // Se a autenticação foi bem sucedida, navegue para a próxima tela
-        if (response.status === 200) {
-          navigation.navigate("Home");
-        } else {
-          // Caso contrário, exiba uma mensagem de erro
-          alert("Email ou senha incorretos");
-        }
-      } catch (err) {
-        console.error(err);
-        // Exiba uma mensagem de erro caso a autenticação falhe
-        alert("Email ou senha incorretos");
+  useEffect(() => {
+    // Verifica se o usuário já está logado
+    AsyncStorage.getItem("token").then((token) => {
+      if (token) {
+        navigation.navigate("Home");
       }
-    };
+    });
+  }, []);
 
-    navigation.navigate("Home");
+  const handleLogin = async () => {
+    console.log("email: ", email);
+    console.log("password: ", password);
+
+    try {
+      const response = await axios.post("http://localhost:3000/api/login", {
+        email,
+        password,
+      });
+
+      console.log("response.data: ", response.data);
+
+      const token = response.data.token;
+      // Salva o token no AsyncStorage
+      await AsyncStorage.setItem("token", token);
+      // Navega para a tela HomeScreen
+      navigation.navigate("Home");
+    } catch (error) {
+      console.log("error: ", error);
+      setError("Email ou senha incorretos.");
+    }
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Login</Text>
-      <StatusBar style="auto" />
-      <Text style={styles.title}>Bem-vindo!</Text>
+    <View style={styles.container}>
+      <Text style={styles.title}>Login</Text>
+      {error ? <Text style={styles.error}>{error}</Text> : null}
       <TextInput
         style={styles.input}
         placeholder="Email"
-        value={email}
+        autoCapitalize="none"
         onChangeText={setEmail}
+        value={email}
       />
       <TextInput
         style={styles.input}
         placeholder="Senha"
-        value={password}
+        secureTextEntry={true}
         onChangeText={setPassword}
-        secureTextEntry
+        value={password}
       />
-      <TouchableOpacity style={styles.button} onPress={handleLogin}>
-        <Text style={styles.buttonText}>Entrar</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.registerButton}
-        onPress={() => navigation.navigate("Register")}
-      >
-        <Text style={styles.registerButtonText}>
-          Não tem uma conta? Cadastre-se aqui!
-        </Text>
-      </TouchableOpacity>
-    </SafeAreaView>
+      <View style={styles.buttonContainer}>
+        <Button title="Entrar" onPress={handleLogin} color="#008080" />
+      </View>
+      <View style={styles.buttonContainer}>
+        <Button
+          title="Não tem uma conta? Cadastre-se aqui."
+          onPress={() => navigation.navigate("Register")}
+          color="#ccc"
+        />
+      </View>
+    </View>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
   title: {
     fontSize: 24,
-    fontWeight: "bold",
-    marginBottom: 32,
+    marginBottom: 16,
   },
   input: {
-    height: 48,
-    width: "80%",
     borderWidth: 1,
     borderColor: "#ccc",
     borderRadius: 4,
-    paddingHorizontal: 12,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
     marginBottom: 16,
-  },
-  button: {
-    height: 48,
     width: "80%",
-    backgroundColor: "#007bff",
-    alignItems: "center",
-    justifyContent: "center",
-    borderRadius: 4,
-    marginBottom: 8,
   },
-  buttonText: {
-    color: "#fff",
-    fontWeight: "bold",
-    fontSize: 16,
-  },
-  registerButton: {
+  buttonContainer: {
     marginTop: 16,
+    width: "80%",
   },
-  registerButtonText: {
-    color: "#007bff",
-    fontSize: 16,
+  error: {
+    color: "red",
+    marginBottom: 16,
   },
 });
 
