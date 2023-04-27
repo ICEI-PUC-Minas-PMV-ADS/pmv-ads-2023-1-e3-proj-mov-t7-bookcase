@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   StyleSheet,
   View,
@@ -16,6 +16,7 @@ const { width } = Dimensions.get("window");
 const HomeScreen = ({ navigation }) => {
   const [livros, setLivros] = useState([]);
   const [busca, setBusca] = useState("");
+  const searchInputRef = useRef(null);
 
   useEffect(() => {
     async function fetchData() {
@@ -60,6 +61,10 @@ const HomeScreen = ({ navigation }) => {
     return resultado;
   };
 
+  const handleSearchIconPress = () => {
+    searchInputRef.current.focus();
+  };
+
   return (
     <View style={styles.container}>
       {/* Barra de navegação */}
@@ -70,18 +75,25 @@ const HomeScreen = ({ navigation }) => {
         <Text style={styles.navTitle}>Livros</Text>
         <TouchableOpacity
           style={styles.navItem}
-          onPress={() => navigation.navigate("Search")}
+          onPress={() => handleSearchIconPress()}
         >
           <FontAwesome name="search" size={24} color="black" />
         </TouchableOpacity>
       </View>
       {/* Campo de busca */}
-      <TextInput
-        style={styles.busca}
-        placeholder="Buscar livros"
-        onChangeText={(text) => setBusca(text)}
-        value={busca}
-      />
+      <View style={styles.searchContainer}>
+        <TextInput
+          ref={searchInputRef}
+          style={styles.searchInput}
+          placeholder="Buscar livros"
+          onChangeText={(text) => setBusca(text)}
+          value={busca}
+        />
+        <TouchableOpacity
+          style={styles.searchIcon}
+          onPress={() => handleSearchIconPress()}
+        ></TouchableOpacity>
+      </View>
       {/* Lista de livros */}
       <FlatList
         data={filtrarLivros(livros, busca)}
