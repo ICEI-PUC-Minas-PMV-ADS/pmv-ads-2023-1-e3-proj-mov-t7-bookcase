@@ -8,8 +8,6 @@
 
 `3 semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
-
 ## Integrantes
 
 * Matheus Pereira Dionisio ✝️ press F...
