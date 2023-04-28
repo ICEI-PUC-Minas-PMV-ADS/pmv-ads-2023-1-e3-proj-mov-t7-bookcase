@@ -12,7 +12,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Matheus Pereira Dionisio ✝️ Press F
+* Matheus Pereira Dionisio ✝️ press F...
 * Carlos Eduardo Favilla Lobo  
 * Mariana Júlia Estevam Corrêa
 * Gabriel Miranda 
