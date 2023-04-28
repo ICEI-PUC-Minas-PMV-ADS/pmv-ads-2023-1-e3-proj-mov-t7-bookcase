@@ -12,12 +12,12 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 
 ## Integrantes
 
-* Matheus Pereira Dionisio †
+* Matheus Pereira Dionisio ✝️
 * Carlos Eduardo Favilla Lobo  
 * Mariana Júlia Estevam Corrêa
 * Gabriel Miranda 
 * Gabriel Silveira
-* Thamara Machado Rocha †
+* Thamara Machado Rocha ✝️
 * Natalia Liberato
 
 
