@@ -9,6 +9,7 @@ import {
   TextInput,
 } from "react-native";
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
+
 import axios from "axios";
 
 const { width } = Dimensions.get("window");
@@ -70,8 +71,17 @@ const HomeScreen = ({ navigation }) => {
       {/* Barra de navegação */}
       <View style={styles.navbar}>
         <TouchableOpacity style={styles.navItem}>
-          <AntDesign name="setting" size={24} color="black" />
+          <TouchableOpacity style={styles.navItem}>
+            <AntDesign name="setting" size={24} color="black" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Upload")}
+            style={styles.navItem}
+          >
+            <FontAwesome name="book" size={24} color="black" style={{}} />
+          </TouchableOpacity>
         </TouchableOpacity>
+
         <Text style={styles.navTitle}>Livros</Text>
         <TouchableOpacity
           style={styles.navItem}
@@ -98,7 +108,7 @@ const HomeScreen = ({ navigation }) => {
       <FlatList
         data={filtrarLivros(livros, busca)}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={(item) => item.idlivros.toString()}
         contentContainerStyle={{ width }}
       />
     </View>
@@ -111,6 +121,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     padding: 20,
   },
+
   item: {
     padding: 20,
     marginVertical: 8,
@@ -153,6 +164,7 @@ const styles = StyleSheet.create({
   navItem: {
     padding: 10,
   },
+
   navTitle: {
     fontSize: 20,
     fontWeight: "bold",
