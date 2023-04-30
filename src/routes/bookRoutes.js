@@ -1,6 +1,7 @@
 const express = require("express");
 const pool = require("../database/db");
 const router = express.Router();
+const { authenticateToken } = require("../middleware/middleware");
 
 // Rota para listar todos os livros
 router.get("/livros", async (req, res) => {
@@ -15,19 +16,42 @@ router.get("/livros", async (req, res) => {
   }
 });
 
-// Rota para criar um novo livro
-router.post("/livros", async (req, res) => {
+router.post("/livros", authenticateToken, async (req, res) => {
   const { titulo, autor, descricao, link_download } = req.body;
+  const userEmail = req.userEmail;
+
+  console.log("Email do usuário atual: ", userEmail);
+
   try {
     const conn = await pool.getConnection();
-    const [result] = await conn.query(
+
+    // Obtém o id do usuário atual
+    const [userResult] = await conn.query(
+      "SELECT iduser FROM users WHERE email = ?",
+      [userEmail]
+    );
+    const iduser = userResult[0].iduser;
+
+    // Insere o livro na tabela 'livros'
+    const [livroResult] = await conn.query(
       "INSERT INTO livros (titulo, autor, descricao, link_download) VALUES (?, ?, ?, ?)",
       [titulo, autor, descricao, link_download]
     );
+
+    // Insere na tabela 'upload_history' com o id do usuário atual
+    const [uploadResult] = await conn.query(
+      "INSERT INTO upload_history (iduser, idlivros) VALUES (?, ?)",
+      [iduser, livroResult.insertId]
+    );
+
     conn.release();
-    res
-      .status(201)
-      .json({ id: result.insertId, titulo, autor, descricao, link_download });
+    res.status(201).json({
+      id: livroResult.insertId,
+      titulo,
+      autor,
+      descricao,
+      link_download,
+    });
   } catch (err) {
     console.error(err);
     res.status(500).send("Erro ao criar livro");

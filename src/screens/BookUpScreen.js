@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, TextInput, Button } from "react-native";
 import axios from "axios";
+import AsyncStorage from "@react-native-async-storage/async-storage";
 
 const BookUpScreen = () => {
   const [titulo, setTitulo] = useState("");
@@ -10,12 +11,22 @@ const BookUpScreen = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post("http://localhost:3000/books/livros", {
-        titulo,
-        autor,
-        descricao,
-        link_download: linkDownload,
-      });
+      const token = await AsyncStorage.getItem("token");
+      console.log("Token:", token);
+      const response = await axios.post(
+        "http://localhost:3000/books/livros",
+        {
+          titulo,
+          autor,
+          descricao,
+          link_download: linkDownload,
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       console.log(response.data);
       // Aqui você pode exibir uma mensagem de sucesso ou redirecionar o usuário para outra tela
     } catch (error) {
