@@ -92,17 +92,40 @@ router.post("/livros", authenticateToken, async (req, res) => {
 });
 
 // Rota para atualizar um livro existente
-router.put("/livros/:id", async (req, res) => {
-  const { id } = req.params;
+router.put("/livros/:id", authenticateToken, async (req, res) => {
   const { titulo, autor, descricao, link_download } = req.body;
+  const userEmail = req.userEmail;
+
   try {
     const conn = await pool.getConnection();
-    const [result] = await conn.query(
-      "UPDATE livros SET titulo = ?, autor = ?, descricao = ?, link_download = ? WHERE id = ?",
-      [titulo, autor, descricao, link_download, id]
+
+    // Busca o id do usuário a partir do email autenticado
+    const [userResult] = await conn.query(
+      "SELECT iduser FROM users WHERE email = ?",
+      [userEmail]
     );
+    const iduser = userResult[0].iduser;
+
+    // Verifica se o livro que será atualizado pertence ao usuário autenticado
+    const [bookResult] = await conn.query(
+      "SELECT idlivros FROM upload_history WHERE idlivros = ? AND iduser = ?",
+      [req.params.id, iduser]
+    );
+
+    if (bookResult.length === 0) {
+      res.status(401).send("Não autorizado a atualizar este livro");
+      return;
+    }
+
+    // Atualiza os dados do livro
+    const [updateResult] = await conn.query(
+      "UPDATE livros l INNER JOIN upload_history uh ON l.idlivros = uh.idlivros SET l.titulo = ?, l.autor = ?, l.descricao = ?, l.link_download = ? WHERE uh.idlivros = ? AND uh.iduser = ?",
+      [titulo, autor, descricao, link_download, req.params.id, iduser]
+    );
+
     conn.release();
-    if (result.affectedRows === 0) {
+
+    if (updateResult.affectedRows === 0) {
       res.status(404).send("Livro não encontrado");
     } else {
       res.send("Livro atualizado com sucesso");
