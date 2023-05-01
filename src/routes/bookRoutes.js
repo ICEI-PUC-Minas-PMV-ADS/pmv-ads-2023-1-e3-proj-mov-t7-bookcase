@@ -2,6 +2,9 @@ const express = require("express");
 const pool = require("../database/db");
 const router = express.Router();
 const { authenticateToken } = require("../middleware/middleware");
+const {
+  checkDeletePermission,
+} = require("../middleware/checkDeletePermission");
 
 // Rota para listar todos os livros
 router.get("/livros", async (req, res) => {
@@ -110,23 +113,50 @@ router.put("/livros/:id", async (req, res) => {
   }
 });
 
-// Rota para excluir um livro existente
-router.delete("/livros/:id", async (req, res) => {
-  const { id } = req.params;
-  try {
-    const conn = await pool.getConnection();
-    const [result] = await conn.query("DELETE FROM livros WHERE id = ?", [id]);
-    conn.release();
-    if (result.affectedRows === 0) {
-      res.status(404).send("Livro não encontrado");
-    } else {
-      res.send("Livro excluído com sucesso");
+router.delete(
+  "/livros/:idlivros",
+  authenticateToken,
+  checkDeletePermission,
+  async (req, res) => {
+    const idlivros = req.params.idlivros;
+    try {
+      const conn = await pool.getConnection();
+      await conn.beginTransaction();
+
+      // Verifica se o livro possui uploads na tabela upload_history
+      const [uploadRows] = await conn.query(
+        "SELECT * FROM upload_history WHERE idlivros = ?",
+        [idlivros]
+      );
+
+      if (uploadRows.length > 0) {
+        // Caso existam uploads, deleta todas as linhas da tabela upload_history relacionadas ao livro
+        await conn.query("DELETE FROM upload_history WHERE idlivros = ?", [
+          idlivros,
+        ]);
+      }
+
+      // Deleta o livro da tabela livros
+      await conn.query("DELETE FROM livros WHERE idlivros = ?", [idlivros]);
+
+      await conn.commit();
+      conn.release();
+
+      res.send("Livro deletado com sucesso!");
+    } catch (err) {
+      if (err.code === "ER_ROW_IS_REFERENCED_2") {
+        res
+          .status(400)
+          .send(
+            "Não é possível deletar o livro, pois existem uploads relacionados a ele."
+          );
+      } else {
+        console.error(err);
+        res.status(500).send("Erro ao deletar livro");
+      }
     }
-  } catch (err) {
-    console.error(err);
-    res.status(500).send("Erro ao excluir livro");
   }
-});
+);
 
 // Rota de pesquisa de livros
 router.get("/search", async (req, res) => {
