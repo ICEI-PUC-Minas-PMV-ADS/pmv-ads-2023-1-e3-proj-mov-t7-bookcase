@@ -16,6 +16,36 @@ router.get("/livros", async (req, res) => {
   }
 });
 
+// Rota para listar todos os livros
+router.get("/upload", authenticateToken, async (req, res) => {
+  const userEmail = req.userEmail;
+  console.log("Email do usuário atual: ", userEmail);
+  try {
+    const conn = await pool.getConnection();
+    const [userResult] = await conn.query(
+      "SELECT iduser FROM users WHERE email = ?",
+      [userEmail]
+    );
+    const iduser = userResult[0].iduser;
+
+    let query =
+      "SELECT livros.* FROM livros INNER JOIN upload_history ON livros.idlivros = upload_history.idlivros WHERE upload_history.iduser = ?";
+
+    // Verifica se foi passado o parâmetro para listar apenas os enviados na última atualização
+    if (req.query.enviados === "enviados") {
+      query +=
+        " AND upload_history.data_upload = (SELECT MAX(data_upload) FROM upload_history WHERE idlivros = livros.idlivros)";
+    }
+
+    const [rows, fields] = await conn.query(query, [iduser]);
+    conn.release();
+    res.json(rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send("Erro ao buscar livros");
+  }
+});
+
 router.post("/livros", authenticateToken, async (req, res) => {
   const { titulo, autor, descricao, link_download } = req.body;
   const userEmail = req.userEmail;
