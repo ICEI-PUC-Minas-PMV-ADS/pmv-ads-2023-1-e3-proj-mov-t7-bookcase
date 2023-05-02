@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { View, Text, TextInput, TouchableOpacity, Modal } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
+import { StyleSheet } from "react-native";
 
 const Atualizar = () => {
   const [livros, setLivros] = useState([]);
@@ -94,48 +95,65 @@ const Atualizar = () => {
       console.error(error);
     }
   };
+
   return (
-    <View>
-      <Text>BookUpScreen</Text>
-      <TextInput placeholder="Título" value={titulo} onChangeText={setTitulo} />
-      <TextInput placeholder="Autor" value={autor} onChangeText={setAutor} />
+    <View style={styles.container}>
+      <Text style={styles.title}>BookUpScreen</Text>
       <TextInput
+        style={styles.input}
+        placeholder="Título"
+        value={titulo}
+        onChangeText={setTitulo}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Autor"
+        value={autor}
+        onChangeText={setAutor}
+      />
+      <TextInput
+        style={styles.input}
         placeholder="Descrição"
         value={descricao}
         onChangeText={setDescricao}
       />
       <TextInput
+        style={styles.input}
         placeholder="Link para download"
         value={link_download}
         onChangeText={setLink}
       />
-      <TouchableOpacity onPress={handleUpload}>
-        <Text>Enviar</Text>
+      <TouchableOpacity style={styles.button} onPress={handleUpload}>
+        <Text style={styles.buttonText}>Enviar</Text>
       </TouchableOpacity>
       <Modal visible={modalVisible}>
         <View>
           <TextInput
+            style={styles.input}
             placeholder="Título"
             value={titulo}
             onChangeText={setTitulo}
           />
           <TextInput
+            style={styles.input}
             placeholder="Autor"
             value={autor}
             onChangeText={setAutor}
           />
           <TextInput
+            style={styles.input}
             placeholder="Descrição"
             value={descricao}
             onChangeText={setDescricao}
           />
           <TextInput
+            style={styles.input}
             placeholder="Link para download"
             value={link_download}
             onChangeText={setLink}
           />
-          <TouchableOpacity onPress={handleUpdate}>
-            <Text>Atualizar</Text>
+          <TouchableOpacity style={styles.button} onPress={handleUpdate}>
+            <Text style={styles.buttonText}>Atualizar</Text>
           </TouchableOpacity>
         </View>
       </Modal>
@@ -150,4 +168,36 @@ const Atualizar = () => {
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: "#fff",
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 20,
+  },
+  input: {
+    height: 40,
+    borderColor: "gray",
+    borderWidth: 1,
+    marginBottom: 10,
+    paddingHorizontal: 10,
+  },
+  button: {
+    backgroundColor: "blue",
+    padding: 10,
+    borderRadius: 5,
+    marginTop: 10,
+  },
+  buttonText: {
+    color: "#fff",
+    textAlign: "center",
+    fontWeight: "bold",
+  },
+});
+
 export default Atualizar;
