@@ -1,9 +1,17 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, TextInput, Button, FlatList } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  Button,
+  FlatList,
+  TouchableOpacity,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons"; // importação do ícone
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
+import { TouchableHighlight, Linking } from "react-native";
 
 const BookUpScreen = () => {
   const [titulo, setTitulo] = useState("");
@@ -78,29 +86,52 @@ const BookUpScreen = () => {
       );
       console.log(response.data);
       getLivros();
-      // Aqui você pode exibir uma mensagem de sucesso ou atualizar o estado da tela
     } catch (error) {
       console.error(error);
-      // Aqui você pode exibir uma mensagem de erro para o usuário
     }
   };
 
   const renderItem = ({ item }) => (
-    <View style={{ marginVertical: 10 }}>
-      <Text style={{ fontSize: 18, fontWeight: "bold" }}>{item.titulo}</Text>
-      <Text style={{ fontSize: 16 }}>{item.autor}</Text>
-      <Text style={{ fontSize: 14 }}>{item.descricao}</Text>
-      <Text style={{ color: "blue" }}>{item.link_download}</Text>
-      <Button title="Delete" onPress={() => handleDelete(item.idlivros)} />
+    <View
+      style={{
+        padding: 20,
+        marginVertical: 8,
+        marginHorizontal: 16,
+        borderRadius: 10,
+        backgroundColor: "#c2e1ec",
+      }}
+    >
+      <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 5 }}>
+        {item.titulo}
+      </Text>
+      <Text style={{ fontSize: 16, marginBottom: 5 }}>{item.autor}</Text>
+      <Text style={{ fontSize: 14, marginBottom: 5 }}>{item.descricao}</Text>
+      <View style={{ flexDirection: "row", justifyContent: "flex-end" }}>
+        <TouchableHighlight
+          onPress={() => window.open(item.link_download, "_blank")}
+          style={{ marginBottom: 10, marginRight: 20 }}
+        >
+          <Text style={{ color: "blue" }}>Download</Text>
+        </TouchableHighlight>
+        <TouchableOpacity onPress={() => handleDelete(item.idlivros)}>
+          <Text style={{ color: "red" }}>Excluir</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
-  return (
-    <View style={{ padding: 10 }}>
-      <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 10 }}>
-        Adicionar Livro
-      </Text>
 
-      <Ionicons name="albums" size={24} color="black" onPress={Atualizar} />
+  return (
+    <View style={{ padding: 20 }}>
+      <Text style={{ fontSize: 28, fontWeight: "bold", marginBottom: 20 }}>
+        Adicionar Livro:
+      </Text>
+      <Ionicons
+        name="cloud-upload-outline"
+        size={30}
+        color="black"
+        onPress={Atualizar}
+        style={{ marginBottom: 20, position: "absolute", right: 20 }}
+      />
 
       <TextInput
         placeholder="Título"
@@ -111,6 +142,7 @@ const BookUpScreen = () => {
           borderColor: "#ccc",
           padding: 10,
           marginBottom: 10,
+          borderRadius: 5,
         }}
       />
       <TextInput
@@ -122,6 +154,7 @@ const BookUpScreen = () => {
           borderColor: "#ccc",
           padding: 10,
           marginBottom: 10,
+          borderRadius: 5,
         }}
       />
       <TextInput
@@ -133,6 +166,7 @@ const BookUpScreen = () => {
           borderColor: "#ccc",
           padding: 10,
           marginBottom: 10,
+          borderRadius: 5,
         }}
       />
       <TextInput
@@ -143,12 +177,24 @@ const BookUpScreen = () => {
           borderWidth: 1,
           borderColor: "#ccc",
           padding: 10,
-          marginBottom: 10,
+          marginBottom: 20,
+          borderRadius: 5,
         }}
       />
-      <Button title="Adicionar" onPress={handleSubmit} />
-      <Text style={{ fontSize: 20, fontWeight: "bold", marginVertical: 10 }}>
-        Meus Livros
+      <TouchableOpacity
+        style={{
+          backgroundColor: "#007AFF",
+          padding: 15,
+          borderRadius: 5,
+          alignItems: "center",
+        }}
+        onPress={handleSubmit}
+      >
+        <Text style={{ color: "#fff", fontSize: 18 }}>Adicionar</Text>
+      </TouchableOpacity>
+
+      <Text style={{ fontSize: 28, fontWeight: "bold", marginVertical: 20 }}>
+        Meus Livros:
       </Text>
       <FlatList
         data={livros}
@@ -158,4 +204,5 @@ const BookUpScreen = () => {
     </View>
   );
 };
+
 export default BookUpScreen;

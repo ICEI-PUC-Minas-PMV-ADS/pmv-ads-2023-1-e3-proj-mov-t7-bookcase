@@ -6,7 +6,7 @@ import { StyleSheet } from "react-native";
 
 const Atualizar = () => {
   const [livros, setLivros] = useState([]);
-  const [modalVisible, setModalVisible] = useState(false);
+  const [setModalVisible] = useState(false);
   const [livroEditando, setLivroEditando] = useState(null);
   const [titulo, setTitulo] = useState("");
   const [autor, setAutor] = useState("");
@@ -30,33 +30,6 @@ const Atualizar = () => {
   useEffect(() => {
     getLivros();
   }, []);
-
-  const handleUpload = async () => {
-    try {
-      const token = await AsyncStorage.getItem("token");
-      await axios.post(
-        "http://localhost:3000/books/livros",
-        {
-          titulo,
-          autor,
-          descricao,
-          link_download,
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        }
-      );
-      setTitulo("");
-      setAutor("");
-      setDescricao("");
-      setLink("");
-      getLivros();
-    } catch (error) {
-      console.error(error);
-    }
-  };
 
   const handleEdit = (livro) => {
     setLivroEditando(livro);
@@ -95,108 +68,110 @@ const Atualizar = () => {
       console.error(error);
     }
   };
-
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>BookUpScreen</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Título"
-        value={titulo}
-        onChangeText={setTitulo}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Autor"
-        value={autor}
-        onChangeText={setAutor}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Descrição"
-        value={descricao}
-        onChangeText={setDescricao}
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Link para download"
-        value={link_download}
-        onChangeText={setLink}
-      />
-      <TouchableOpacity style={styles.button} onPress={handleUpload}>
-        <Text style={styles.buttonText}>Enviar</Text>
-      </TouchableOpacity>
-      <Modal visible={modalVisible}>
-        <View>
-          <TextInput
-            style={styles.input}
-            placeholder="Título"
-            value={titulo}
-            onChangeText={setTitulo}
-          />
-          <TextInput
-            style={styles.input}
-            placeholder="Autor"
-            value={autor}
-            onChangeText={setAutor}
-          />
-          <TextInput
-            style={styles.input}
-            placeholder="Descrição"
-            value={descricao}
-            onChangeText={setDescricao}
-          />
-          <TextInput
-            style={styles.input}
-            placeholder="Link para download"
-            value={link_download}
-            onChangeText={setLink}
-          />
-          <TouchableOpacity style={styles.button} onPress={handleUpdate}>
-            <Text style={styles.buttonText}>Atualizar</Text>
-          </TouchableOpacity>
-        </View>
-      </Modal>
-      {livros.map((livro) => (
-        <TouchableOpacity
-          key={livro.idlivros}
-          onPress={() => handleEdit(livro)}
-        >
-          <Text>{livro.titulo}</Text>
+      <Text style={styles.title}>Atualizar:</Text>
+      <View style={styles.form}>
+        <TextInput
+          style={styles.input}
+          placeholder="Título"
+          value={titulo}
+          onChangeText={setTitulo}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Autor"
+          value={autor}
+          onChangeText={setAutor}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Descrição"
+          value={descricao}
+          onChangeText={setDescricao}
+        />
+        <TextInput
+          style={styles.input}
+          placeholder="Link para download"
+          value={link_download}
+          onChangeText={setLink}
+        />
+        <TouchableOpacity style={styles.button} onPress={handleUpdate}>
+          <Text style={styles.buttonText}>Atualizar</Text>
         </TouchableOpacity>
-      ))}
+      </View>
+      <Text style={styles.title}>Meus livros:</Text>
+      <View style={styles.livrosContainer}>
+        {livros.map((livro) => (
+          <TouchableOpacity
+            key={livro.idlivros}
+            onPress={() => handleEdit(livro)}
+            style={styles.livro}
+          >
+            <Text style={styles.livroTitulo}>{livro.titulo}</Text>
+            <Text style={styles.livroAutor}>{livro.autor}</Text>
+            <Text style={styles.livroDescricao}>{livro.descricao}</Text>
+            <Text style={styles.livroLink}>{livro.link_download}</Text>
+          </TouchableOpacity>
+        ))}
+      </View>
     </View>
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: "#fff",
+    backgroundColor: "rgba(0, 0, 0, 0)",
   },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 20,
   },
+  form: {
+    marginBottom: 20,
+  },
   input: {
-    height: 40,
-    borderColor: "gray",
     borderWidth: 1,
+    borderColor: "#ccc",
+    padding: 10,
     marginBottom: 10,
-    paddingHorizontal: 10,
+    borderRadius: 5,
   },
   button: {
-    backgroundColor: "blue",
-    padding: 10,
+    backgroundColor: "#007AFF",
+    padding: 15,
     borderRadius: 5,
-    marginTop: 10,
+    marginTop: 15,
+    alignItems: "center",
   },
   buttonText: {
     color: "#fff",
     textAlign: "center",
     fontWeight: "bold",
+  },
+  livrosContainer: {
+    flex: 1,
+  },
+  livro: {
+    backgroundColor: "#c2e1ec",
+    padding: 10,
+    borderRadius: 5,
+    marginBottom: 10,
+  },
+  livroTitulo: {
+    fontSize: 18,
+    fontWeight: "bold",
+  },
+  livroAutor: {
+    fontSize: 16,
+  },
+  livroDescricao: {
+    fontSize: 14,
+  },
+  livroLink: {
+    color: "blue",
   },
 });
 
