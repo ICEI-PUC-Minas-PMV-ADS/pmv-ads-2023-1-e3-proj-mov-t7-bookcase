@@ -125,9 +125,9 @@ const styles = StyleSheet.create({
   item: {
     padding: 20,
     marginVertical: 8,
-    marginHorizontal: 16,
+
     borderRadius: 10,
-    backgroundColor: "#fafafa",
+    backgroundColor: "#e6eff2",
     elevation: 2,
     maxWidth: width - 40,
   },
