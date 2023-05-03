@@ -54,10 +54,10 @@ A taxa de sucesso será mensurada no caso de pesquisa e avaliação do conteudo 
 | Critérios de Êxito:  | o usuario utilizará a aplicação e encontrará conteúdo que lhe interesse de forma rapida e eficiente e clara   
 
 
-|  **Caso de Teste**  |  **CT-04  -  AVALIAR OBRA**                                                                              |
+|  **Caso de Teste**  |  **CT-04  -  CADASTRAR OBRA**                                                                              |
 |--|--|
-| Objetivo do Teste:   | Verificar se o usuário consegue de forma eficiente e rapida  avaliar a obra encontrada e lida               | 
-| Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) filtrar o conteudo de interesse 3) selecionar conteúdo de interesse e visualiza-lo 4) Acessar a pagina de cadastro de usuario (estudante) 5) fazer cadastro de forma rapida e eficiente  6) Retornar para a página do conteúdo de interesse anteriormente visualizado 7) avaliar o conteúdo de interesse |
+| Objetivo do Teste:   | Verificar se o usuário consegue de forma eficiente e rapida  cadastrar  obra literária               | 
+| Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) fazer login 3) cadastrar obra de  interesse e preencher os dados necessários para o cadastramento 4) Finalizar cadastramento e visulaizar obra na tela home |
 | Critérios de Êxito:  | o usuario utilizará a aplicação e avaliará o  conteúdo que lhe interesse de forma rapida e eficiente                                |
 
 
