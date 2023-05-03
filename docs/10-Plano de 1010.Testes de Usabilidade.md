@@ -53,14 +53,14 @@ A taxa de sucesso será mensurada no caso de pesquisa e avaliação do conteudo 
 | Critérios de Êxito:  | o usuario utilizará a aplicação e avaliará o  conteúdo que lhe interesse de forma rapida e eficiente                                |
 
 
-|  **Caso de Teste**  |  **CT-05  - PESQUISAR OBRA **                                                                              |
+|  **Caso de Teste**  |  **CT-04  - PESQUISAR OBRA **                                                                              |
 |--|--|
 | Objetivo do Teste:   | Verificar se o usuário consegue pesquisar de maneira satisfatória sem erros e rápida obras literárias corretamente.                   | 
 | Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) Preencher os campos necessários para encontrar o conteúdo de interesse 3) filtrar o conteudo de interesse 4) selecionar conteúde de interesse e visualiza-lo  |
 | Critérios de Êxito:  | o usuario utilizará a aplicação e encontrará conteúdo que lhe interesse de forma rapida e eficiente e clara   
 
 
-|  **Caso de Teste**  |  **CT-06  -  REALIZAR DOWALOAD DA OBRA**                                                                              |
+|  **Caso de Teste**  |  **CT-05  -  REALIZAR DOWALOAD DA OBRA**                                                                              |
 |--|--|
 | Objetivo do Teste:   | Verificar se o usuário consegue de forma eficiente e rapida  cadastrar  obra literária               | 
 | Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) fazer login 3) encontrar obra de interesse 4) realizar o download da obra para leitura |
