@@ -34,7 +34,20 @@ Abaixo segue os video de cada um doa usuarios que avaliaram a aplicação.
 | 0002	| 0:36 | 7 | 00 | --- | Eficiente |
 
 
-|  **Caso de Teste**  |  **CTU-03  - PESQUISAR CONTEÚDO**                                                                              |
+|  **Caso de Teste**  |  **CT-03  -  CADASTRAR OBRA**                                                                              |
+|--|--|
+| Objetivo do Teste:   | Verificar se o usuário consegue de forma eficiente e rapida  cadastrar  obra literária               | 
+| Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) fazer login 3) cadastrar obra de  interesse e preencher os dados necessários para o cadastramento 4) Finalizar cadastramento e visulaizar obra na tela home |
+| Critérios de Êxito:  | o usuario utilizará a aplicação e avaliará o  conteúdo que lhe interesse de forma rapida e eficiente                                |
+
+
+ **Usuário**	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
+| --- 	| --- | ---  | --- | --- | --- |
+| 0001	| 0:28 |6 | 00 | --- | Eficiente |
+| 0002	| 0:36 | 7 | 00 | --- | Eficiente |
+
+
+|  **Caso de Teste**  |  **CTU-04  - PESQUISAR OBRA**                                                                              |
 |--|--|
 | Objetivo do Teste:   | Verificar se o usuário consegue pesquisar de maneira satisfatória sem erros e rápida materiais sobre determinado assunto corretamente.                   | 
 | Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) Preencher os campos necessários para encontrar o conteúdo de interesse 3) filtrar o conteudo de interesse 4) selecionar conteúde de interesse e visualiza-lo  |
@@ -43,28 +56,16 @@ Abaixo segue os video de cada um doa usuarios que avaliaram a aplicação.
  
  **Usuário**	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- | ---  | --- | --- | --- |
-| 0003	| 0:50 |2| 01 | Não | Ineficiente |
-| 0004	| 0:47 | 1 | 01 | Não | Ineficiente |
+| 0003	| 1:30 |20| 00 | --- | Eficiente |
+| 0004	| 1:47 |20| 00 | --- | Eficiente |
  
 
-
-|  **Caso de Teste**  |  **CTU-04  -  AVALIAR CONTEÚDO**                                                                              |
+|  **Caso de Teste**  |  **CT-06  -  REALIZAR DOWALOAD DA OBRA**                                                                              |
 |--|--|
-| Objetivo do Teste:   | Verificar se o usuário consegue de forma eficiente e rapida se cadastrar na aplicação para assim avaliar o conteudo encontrado               | 
-| Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) filtrar o conteudo de interesse 3) selecionar conteúdo de interesse e visualiza-lo 4) Acessar a pagina de cadastro de usuario (estudante) 5) fazer cadastro de forma rapida e eficiente  6) Retornar para a página do conteúdo de interesse anteriormente visualizado 7) avaliar o conteúdo de interesse |
+| Objetivo do Teste:   | Verificar se o usuário consegue de forma eficiente e rapida  cadastrar  obra literária               | 
+| Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) fazer login 3) encontrar obra de interesse 4) realizar o download da obra para leitura |
 | Critérios de Êxito:  | o usuario utilizará a aplicação e avaliará o  conteúdo que lhe interesse de forma rapida e eficiente                                |
-
-**Usuário**	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
-| --- 	| --- | ---  | --- | --- | --- |
-| 0001	| 0:25 |2| 03 | Não | Ineficiente |
-| 0002	| 0:33 | 1 | 02 | Não | Ineficiente |
-
-
-|  **Caso de Teste**  |  **CTU-05  -  CADASTRO E SUBMISSÃO DE CONTEÚDO PARA AVALIAÇÃO**                                                                              |
-|--|--|
-| Objetivo do Teste:   | Verificar se o usuário (professor) consegue de forma eficiente e rápida se cadastrar para submeter conteudo para avaliação e posterior publicação do seu material  na aplicação         | 
-| Passos:              | 1) Acessar a primeira tela do site pelo browser 2) Clicar na opção “Upload" 3) fazer cadastro de forma rapida e eficiente de acordo com os dados requeridos 4) anexar o link com o conteudo para análise 5) Clicar na opção “publicar"|
-| Critérios de Êxito:  | o usuario utilizará a aplicação e anaxará o conteúdo para avaliação de forma rapida e eficiente                                |
+                             |
 
 **Usuário**	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- | ---  | --- | --- | --- |
