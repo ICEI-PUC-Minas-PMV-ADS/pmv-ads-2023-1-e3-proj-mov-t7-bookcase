@@ -1,5 +1,7 @@
 ## Plano de Testes de Software
 
+Apresentamos abaixo os cenários de testes elaborados para a realização dos testes da aplicação móvel, demonstrando os requisitos funcionais sendo satisfeitos: 
+
 | Casos de Teste | CT-01 - Acessar tela de login e cadastro de usuário |
 |--------------------|------------------------------------|
 |`Requisitos Associados` | RF-001 - O sistema terá tela de Login e senha // RNF-005 - A plataforma interativa deve permitir o acesso apenas de usuários cadastrados |
