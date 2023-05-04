@@ -8,22 +8,31 @@ const LoginScreen = () => {
   const navigation = useNavigation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [error, setError] = useState("");
 
   useEffect(() => {
-    // Verifica se o usuário já está logado
-    AsyncStorage.getItem("token").then((token) => {
-      if (token) {
-        navigation.navigate("Home");
-      }
-    });
+    checkLoginStatus();
   }, []);
+
+  const checkLoginStatus = async () => {
+    try {
+      const token = await AsyncStorage.getItem("token");
+
+      if (token) {
+        setIsLoggedIn(true);
+      }
+    } catch (error) {
+      console.log("error: ", error);
+    }
+  };
 
   const handleLogin = async () => {
     console.log("email: ", email);
     console.log("password: ", password);
 
     try {
+      // faz login e salva o token
       const response = await axios.post("http://localhost:3000/api/login", {
         email,
         password,
@@ -31,16 +40,19 @@ const LoginScreen = () => {
 
       console.log("response.data: ", response.data);
 
-      const token = response.data.token;
-      // Salva o token no AsyncStorage
-      await AsyncStorage.setItem("token", token);
-      // Navega para a tela HomeScreen
-      navigation.navigate("Home");
+      const newToken = response.data.token;
+      await AsyncStorage.setItem("token", newToken);
+
+      setIsLoggedIn(true);
     } catch (error) {
       console.log("error: ", error);
       setError("Email ou senha incorretos.");
     }
   };
+
+  if (isLoggedIn) {
+    navigation.navigate("Home");
+  }
 
   return (
     <View style={styles.container}>
@@ -73,6 +85,7 @@ const LoginScreen = () => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

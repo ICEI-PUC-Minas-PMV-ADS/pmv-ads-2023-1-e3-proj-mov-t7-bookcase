@@ -9,7 +9,7 @@ import {
   TextInput,
 } from "react-native";
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
-
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import axios from "axios";
 
 const { width } = Dimensions.get("window");
@@ -42,9 +42,12 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.description} numberOfLines={2}>
         {item.descricao}
       </Text>
-      <Text style={styles.downloadLink} numberOfLines={1}>
-        {item.link_download}
-      </Text>
+      <TouchableOpacity
+        onPress={() => window.open(item.link_download, "_blank")}
+        style={styles.downloadLink}
+      >
+        <Text numberOfLines={1}>{item.link_download}</Text>
+      </TouchableOpacity>
     </View>
   );
 
@@ -66,6 +69,24 @@ const HomeScreen = ({ navigation }) => {
     searchInputRef.current.focus();
   };
 
+  const handleLogout = async () => {
+    try {
+      // Limpa o token da sessão
+      await AsyncStorage.removeItem("token");
+
+      // Redireciona o usuário para a tela de Login
+      navigation.reset({
+        index: 0,
+        routes: [{ name: "login" }],
+      });
+
+      // Recarrega a página
+      window.location.reload();
+    } catch (error) {
+      console.log("Erro ao fazer logout: ", error);
+    }
+  };
+
   return (
     <View style={styles.container}>
       {/* Barra de navegação */}
@@ -80,9 +101,16 @@ const HomeScreen = ({ navigation }) => {
           >
             <FontAwesome name="book" size={24} color="black" style={{}} />
           </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.navItem}
+            onPress={() => handleLogout()}
+          >
+            <AntDesign name="logout" size={24} color="black" />
+          </TouchableOpacity>
         </TouchableOpacity>
 
-        <Text style={styles.navTitle}>Livros</Text>
+        <Text style={styles.navTitle}>Livros:</Text>
+
         <TouchableOpacity
           style={styles.navItem}
           onPress={() => handleSearchIconPress()}
@@ -125,7 +153,6 @@ const styles = StyleSheet.create({
   item: {
     padding: 20,
     marginVertical: 8,
-
     borderRadius: 10,
     backgroundColor: "#e6eff2",
     elevation: 2,
@@ -166,9 +193,10 @@ const styles = StyleSheet.create({
   },
 
   navTitle: {
-    fontSize: 20,
+    fontSize: 30,
     fontWeight: "bold",
     color: "#333",
+    marginRight: 40,
   },
   searchContainer: {
     flexDirection: "row",

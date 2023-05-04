@@ -12,6 +12,7 @@ const Atualizar = () => {
   const [autor, setAutor] = useState("");
   const [descricao, setDescricao] = useState("");
   const [link_download, setLink] = useState("");
+  const [error, setError] = useState("");
 
   const getLivros = async () => {
     try {
@@ -66,11 +67,13 @@ const Atualizar = () => {
       getLivros();
     } catch (error) {
       console.error(error);
+      setError("Por favor insira informações válidas.");
     }
   };
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Atualizar:</Text>
+      {error ? <Text style={styles.error}>{error}</Text> : null}
       <View style={styles.form}>
         <TextInput
           style={styles.input}
@@ -172,6 +175,10 @@ const styles = StyleSheet.create({
   },
   livroLink: {
     color: "blue",
+  },
+  error: {
+    color: "red",
+    marginBottom: 16,
   },
 });
 

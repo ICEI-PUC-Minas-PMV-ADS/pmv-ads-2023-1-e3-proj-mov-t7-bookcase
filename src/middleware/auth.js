@@ -6,6 +6,20 @@ const secret = "mysecret";
 
 async function registerUser(user) {
   try {
+    // Verifica se a senha tem pelo menos 8 caracteres
+    if (user.password.length < 8) {
+      throw new Error("Senha deve ter pelo menos 8 caracteres.");
+    }
+
+    // Verifica se a senha contém pelo menos um caractere especial, um número,
+    // uma letra maiúscula e uma letra minúscula
+    const regex = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    if (!regex.test(user.password)) {
+      throw new Error(
+        "Senha deve conter pelo menos um caractere especial, um número, uma letra maiúscula e uma letra minúscula."
+      );
+    }
+
     // Gera um hash da senha do usuário
     const hashedPassword = await bcrypt.hash(user.password, 10);
 
