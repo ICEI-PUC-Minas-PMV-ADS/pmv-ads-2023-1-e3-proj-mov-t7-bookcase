@@ -20,6 +20,7 @@ const BookUpScreen = () => {
   const [linkDownload, setLinkDownload] = useState("");
   const [livros, setLivros] = useState([]);
   const navigation = useNavigation();
+  const [error, setError] = useState("");
 
   const Atualizar = () => {
     navigation.navigate("Atualizar"); // substitua "NomeDaPagina" pelo nome da página para onde deseja navegar
@@ -69,7 +70,7 @@ const BookUpScreen = () => {
       // Aqui você pode exibir uma mensagem de sucesso ou redirecionar o usuário para outra tela
     } catch (error) {
       console.error(error);
-      // Aqui você pode exibir uma mensagem de erro para o usuário
+      setError("Erro ao cadastrar livro.");
     }
   };
 
@@ -88,6 +89,7 @@ const BookUpScreen = () => {
       getLivros();
     } catch (error) {
       console.error(error);
+      setError("Erro ao cadastrar livro.");
     }
   };
 
@@ -101,6 +103,9 @@ const BookUpScreen = () => {
         backgroundColor: "#c2e1ec",
       }}
     >
+      {error ? (
+        <Text style={{ color: "red", marginBottom: 16 }}>{error}</Text>
+      ) : null}
       <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 5 }}>
         {item.titulo}
       </Text>
@@ -125,6 +130,9 @@ const BookUpScreen = () => {
       <Text style={{ fontSize: 28, fontWeight: "bold", marginBottom: 20 }}>
         Adicionar Livro:
       </Text>
+      {error ? (
+        <Text style={{ color: "red", marginBottom: 16 }}>{error}</Text>
+      ) : null}
       <Ionicons
         name="cloud-upload-outline"
         size={30}

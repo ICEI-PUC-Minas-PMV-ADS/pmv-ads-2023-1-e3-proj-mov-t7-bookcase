@@ -12,6 +12,7 @@ const RegisterScreen = ({ navigation }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleRegister = async () => {
     try {
@@ -23,15 +24,19 @@ const RegisterScreen = ({ navigation }) => {
 
       console.log(response.data);
 
-      navigation.navigate("Login");
+      navigation.navigate("Bookcase");
     } catch (error) {
       console.log(error);
+      setError(
+        "Email ou senha incorretos. ( Campos não podem estar vazios e senhas devem conter caractere especial, um número, uma letra maiúscula e minúscula... )"
+      );
     }
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Cadastre-se</Text>
+      {error ? <Text style={styles.error}>{error}</Text> : null}
       <TextInput
         style={styles.input}
         placeholder="Nome"
@@ -55,7 +60,7 @@ const RegisterScreen = ({ navigation }) => {
       <TouchableOpacity style={styles.button} onPress={handleRegister}>
         <Text style={styles.buttonText}>Cadastrar</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+      <TouchableOpacity onPress={() => navigation.navigate("Bookcase")}>
         <Text style={styles.link}>Já possui uma conta? Faça login.</Text>
       </TouchableOpacity>
     </View>
@@ -96,6 +101,10 @@ const styles = StyleSheet.create({
   },
   link: {
     marginTop: 16,
+  },
+  error: {
+    color: "red",
+    marginBottom: 16,
   },
 });
 

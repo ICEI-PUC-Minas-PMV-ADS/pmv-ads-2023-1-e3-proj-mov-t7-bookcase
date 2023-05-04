@@ -55,6 +55,10 @@ router.post("/livros", authenticateToken, async (req, res) => {
 
   console.log("Email do usuário atual: ", userEmail);
 
+  if (!titulo || !autor || !descricao || !link_download) {
+    return res.status(400).send("Preencha todos os campos");
+  }
+
   try {
     const conn = await pool.getConnection();
 
@@ -63,6 +67,11 @@ router.post("/livros", authenticateToken, async (req, res) => {
       "SELECT iduser FROM users WHERE email = ?",
       [userEmail]
     );
+
+    if (!userResult[0]) {
+      return res.status(401).send("Usuário não encontrado");
+    }
+
     const iduser = userResult[0].iduser;
 
     // Insere o livro na tabela 'livros'
@@ -90,7 +99,6 @@ router.post("/livros", authenticateToken, async (req, res) => {
     res.status(500).send("Erro ao criar livro");
   }
 });
-
 // Rota para atualizar um livro existente
 router.put("/livros/:id", authenticateToken, async (req, res) => {
   const { titulo, autor, descricao, link_download } = req.body;
