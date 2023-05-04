@@ -7,7 +7,7 @@ import {
   FlatList,
   TouchableOpacity,
 } from "react-native";
-import { Ionicons } from "@expo/vector-icons"; // importação do ícone
+import { Ionicons } from "@expo/vector-icons";
 import axios from "axios";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
@@ -23,7 +23,7 @@ const BookUpScreen = () => {
   const [error, setError] = useState("");
 
   const Atualizar = () => {
-    navigation.navigate("Atualizar"); // substitua "NomeDaPagina" pelo nome da página para onde deseja navegar
+    navigation.navigate("Atualizar");
   };
   useEffect(() => {
     getLivros();
@@ -67,7 +67,6 @@ const BookUpScreen = () => {
       setDescricao("");
       setLinkDownload("");
       getLivros();
-      // Aqui você pode exibir uma mensagem de sucesso ou redirecionar o usuário para outra tela
     } catch (error) {
       console.error(error);
       setError("Erro ao cadastrar livro.");

@@ -11,7 +11,6 @@ const checkDeletePermission = async (req, res, next) => {
     );
     const iduser = userResult[0].iduser;
 
-    // Verifica se o usuário tem permissão para deletar o livro
     const [bookResult] = await conn.query(
       "SELECT livros.* FROM livros INNER JOIN upload_history ON livros.idlivros = upload_history.idlivros WHERE upload_history.iduser = ? AND livros.idlivros = ?",
       [iduser, idlivros]
