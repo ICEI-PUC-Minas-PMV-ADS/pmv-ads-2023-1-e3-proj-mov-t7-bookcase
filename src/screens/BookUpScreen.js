@@ -53,7 +53,7 @@ const BookUpScreen = () => {
           titulo,
           autor,
           descricao,
-          link_download: linkDownload,
+          link_download: `${linkDownload}&download`,
         },
         {
           headers: {
