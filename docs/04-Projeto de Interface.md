@@ -22,7 +22,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 ## Wireframes
 
-No link abaixo mostraremos os principais fluxos dos usuários do projeto.
+Nesta seção será apresentado como o projeto será utilizado pelo usuário, com o passo a passo de sequência de telas para cada ação específica, por fim, uma visão geral da aplicação.
 
 https://www.figma.com/file/oYNEIYlhLfDBsSzojBLFGY/Projeto-Livros-Wireframe?node-id=0-1&t=PWivWaknxU2HM83l-0
 
