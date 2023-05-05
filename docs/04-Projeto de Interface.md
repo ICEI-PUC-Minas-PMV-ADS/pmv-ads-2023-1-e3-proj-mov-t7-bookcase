@@ -49,7 +49,7 @@ Caso o usuário deseje, ele também poderá alter as configurações de sua cont
 
 ## Protótipo
 
-Um protótipo interativo do Wireframe foi criado para melhor visualização, para vê-lo, <a href="https://marvelapp.com/prototype/ef8c41g/screen/91554999"> clique aqui!</a>
+Um protótipo interativo do Wireframe foi criado para melhor visualização, para vê-lo, <a href="https://marvelapp.com/prototype/ef8c41g/screen/91554961"> clique aqui!</a>
 
 
 
