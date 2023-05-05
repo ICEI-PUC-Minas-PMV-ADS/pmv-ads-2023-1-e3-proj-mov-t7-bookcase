@@ -63,16 +63,34 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||2 - Clicar em "Entrar" |
 ||3 - Informar o Usuário e Senha | 
 ||4 - Clicar no botão "Entrar" |
-||5 - Clicar no botão " Nova Obra " |
+||5 - Clicar no botão " livros " |
 ||6 - Preencher os campos obrigatórios |
-||7 - Clicar no botão "Inserir" | 
-||8 - Selecionar o arquivo desejado |
-||9 - Clicar no botão "Ok" |
+||7 - Clicar no botão "Adicionar" | 
+||8 - Voltar a pagina inicial e confirmar que a obra foi cadastrada |
 |`Critério de Êxito` | Documento cadastrado com sucesso. |
 |Resultado:  |Aplicação concluida com sucesso|
 |Evidência:  |https://www.loom.com/share/77e22daf5d0a4fbca250a5b2e2b7eb2a |
 
-| Casos de Teste | CT-05 - Acessar obra para leitura|
+| Casos de Teste | CT-05 - Fazer upload,  e excluir obra cadastrada |
+|--------------------|------------------------------------|
+|`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-008 - A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada |
+|`Objetivo do teste` | Cadastro de documentos |
+|`Passos` | 
+||1 - Acessar o aplicativo móvel |
+||2 - Clicar em "Entrar" |
+||3 - Informar o Usuário e Senha | 
+||4 - Clicar no botão "Entrar" |
+||5 - Clicar no botão " livros " |
+||6 - Preencher os campos obrigatórios |
+||7 - Clicar no botão "Adicionar" | 
+||8 - Voltar a pagina inicial e confirmar que a obra foi cadastrada |
+||10 - Clicar no botao "Livros"  |
+||9 - Encontrar a obra que deseja excluir e clicar em "excluir" |
+|`Critério de Êxito` | Documento excluido com sucesso. |
+|Resultado:  |Aplicação concluida com sucesso|
+|Evidência:  |https://www.loom.com/share/af46225557f045af87fb0cda45ed1961 |
+
+| Casos de Teste | CT-06 - Acessar obra para leitura|
 |--------------------|------------------------------------|
 |`Requisitos Associados` | RF - 003 A A aplicação deve permitir ao usuário baixar uma obra pesquisada para leitura |
 |`Objetivo do teste` | Testar se o usuario consegue baixar uma obra determinada para leitura |
@@ -88,7 +106,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Resultado:  |Aplicação concluida com sucesso parcialmente pois embora tenha sido possivel acessar a obra não foi possivel efetuar seu download|
 |Evidência:  | https://www.loom.com/share/100653c8636b4d7598347d2a91456da0|
 
-| Casos de Teste | CT-06 - Pesquisar Obra|
+| Casos de Teste | CT-07 - Pesquisar Obra|
 |--------------------|------------------------------------|
 |`Requisitos Associados` | RF - 002 A aplicação deve permitir ao usuário buscar uma obras pelo seu nome. |
 |`Objetivo do teste` | Testar se o usuario consegue baixar uma obra determinada para leitura |
