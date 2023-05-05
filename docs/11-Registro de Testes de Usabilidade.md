@@ -15,9 +15,9 @@ Abaixo segue os video de cada um doa usuarios que avaliaram a aplicação.
 
 | **Usuário**	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- | ---  | --- | --- | --- |
-| 0001	| 1:02 | 18 | 00 | --- | Eficiente |
-| 0002	| 1:10 | 17 | 00 | --- | Eficiente, porém não atrativo |
-| 0003	| 1:25 | 22 | 00 | --- | Eficiente |
+| 0001	| 1:02 | 08 | 00 | --- | Eficiente |
+| 0002	| 1:15 | 11 | 00 | --- | Eficiente |
+| 0003	| 0:50 | 07 | 00 | --- | Eficiente, porém não atrativo |
 
 
 |  **Caso de Teste**  |  **CTU-02  - FAZER LOGIN**                                                                              |
@@ -30,8 +30,8 @@ Abaixo segue os video de cada um doa usuarios que avaliaram a aplicação.
 
  **Usuário**	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- | ---  | --- | --- | --- |
-| 0001	| 0:28 |6 | 00 | --- | Eficiente |
-| 0002	| 0:36 | 7 | 00 | --- | Eficiente |
+| 0001	| 0:40 |6 | 00 | --- | Eficiente |
+| 0002	| 0:50 | 7 | 00 | --- | Eficiente |
 
 
 |  **Caso de Teste**  |  **CT-03  -  CADASTRAR OBRA**                                                                              |
@@ -43,49 +43,39 @@ Abaixo segue os video de cada um doa usuarios que avaliaram a aplicação.
 
  **Usuário**	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- | ---  | --- | --- | --- |
-| 0001	| 0:28 |6 | 00 | --- | Eficiente |
-| 0002	| 0:36 | 7 | 00 | --- | Eficiente |
+| 0001	| 1:28 |15 | 00 | --- | Eficiente |
+| 0002	| 2:28 | 20 | 00 | --- | Eficiente |
 
 
 |  **Caso de Teste**  |  **CTU-04  - PESQUISAR OBRA**                                                                              |
 |--|--|
-| Objetivo do Teste:   | Verificar se o usuário consegue pesquisar de maneira satisfatória sem erros e rápida materiais sobre determinado assunto corretamente.                   | 
+| Objetivo do Teste:   | Verificar se o usuário consegue pesquisar de maneira satisfatória sem erros e rápida obras literárias.                   | 
 | Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) Preencher os campos necessários para encontrar o conteúdo de interesse 3) filtrar o conteudo de interesse 4) selecionar conteúde de interesse e visualiza-lo  |
 | Critérios de Êxito:  | o usuario utilizará a aplicação e encontrará conteúdo que lhe interesse de forma rapida e eficiente e clara                                    
  
  
  **Usuário**	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- | ---  | --- | --- | --- |
-| 0003	| 1:30 |20| 00 | --- | Eficiente |
-| 0004	| 1:47 |20| 00 | --- | Eficiente |
+| 0003	| 1:10 |10| 00 | --- | Eficiente |
+| 0004	| 0:50 |08| 00 | --- | Eficiente |
  
 
-|  **Caso de Teste**  |  **CT-06  -  REALIZAR DOWALOAD DA OBRA**                                                                              |
+|  **Caso de Teste**  |  **CT-06  -  REALIZAR DOWNLOAD DA OBRA**                                                                              |
 |--|--|
 | Objetivo do Teste:   | Verificar se o usuário consegue de forma eficiente e rapida  cadastrar  obra literária               | 
 | Passos:              | 1) Acessar a primeira tela do site pelo browser; 2) fazer login 3) encontrar obra de interesse 4) realizar o download da obra para leitura |
-| Critérios de Êxito:  | o usuario utilizará a aplicação e avaliará o  conteúdo que lhe interesse de forma rapida e eficiente                                |
+| Critérios de Êxito:  | o usuario utilizará a aplicação para baixar a obra de interesse de forma rapida e eficiente                                |
                              |
 
 **Usuário**	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
 | --- 	| --- | ---  | --- | --- | --- |
-| 0002	| 0:39 |2| 8 | Não | Ineficiente |
-| 0004	| 0:56 | 1 | 12 | Não | Ineficiente |
+| 0002	| 0:50 |12| 00 | --- | eficiente |
+| 0004	| 0:56 | 13 | 00 | --- | eficiente |
 
-|  **Caso de Teste**  |  **CTU-06  -  AVALIAÇÃO DO CONTEÚDO PELO ADMINISTRADOR PARA PUBLICAÇÃO NA APLICAÇÃO**                                                                              |
-|--|--|
-| Objetivo do Teste:   | Verificar se o adminsitrados conseguem realizar a avaliação do material submetido para publicação na aplicação de forma eficinete e simples
-| Passos:              | 1) Acessar a primeira tela do site pelo browser 2) Clicar na opção “home" 3) visualizar os materias submetidos para analise de publicação 4)  analisar cada material submetido a avaliação clicando no link de cada um 5) concluir se o material é apto ou não para publicação 6) se esse for apto clicar na opção "aceita", se não for apto clicar na opção "recusar" |
-| Critérios de Êxito:  | o administrador utilizará a aplicação e e realizará a avaliação de aptidão dos conteúdos de forma rapida e eficiente 
-
-**Usuário**	| **Tempo** | **Clicks/Ações** | **Qtd. Erros** | **Se recuperou do erro** | **Comentários e observações** |
-| --- 	| --- | ---  | --- | --- | --- |
-| 0001	| 0:23 |2| 3 | Não | Ineficiente |
-| 0003	| 0:18 | 1 | 4 | Não | Ineficiente |
 
 # Relatório Geral do Teste de Usabilidade
 
-Os casos de testes 03, 04, 05, 06 tiveram resultados ineficientes com relatos de erros graves que impossibilitaram a nagevação e utilização da solução.
+Todos os casos de testes tiveram resultados eficientes, entretanto foram relatadas pelos usuarios que a aplicação é pouco atrativa.
 Notou-se ainda que a qualidade da navegação está diretamente associada à qualidade da conexão do usuário e às configurações do dispositivo utilizado para realização dos testes.
 
 Por parte dos integrantes do grupo, cremos que aumentar o escopo do teste de usabilidade com mais perguntas sobre a eficiência da aplicação e a satisfação do usuário deve ser um ponto a se considerar a melhorar para as proximas soluções desenvolvidas. 
