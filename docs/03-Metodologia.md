@@ -53,10 +53,10 @@ Fonte: Vietro (2015)
 
 ### Divisão de Papéis
 
-- Scrum Master: Thamara Machado Rocha;
-- Product Owner: Carlos Eduardo Favilla Lobo;
-- Equipe de Desenvolvimento: Mariana Júlia Estevam Corrêa, Gabriel Silveira;
-- Equipe de Design: Gabriel Miranda, Natalia Liberato.
+- Scrum Master: Carlos Eduardo Favilla Lobo;
+- Product Owner: Mariana Júlia Estevam Corrêa ;
+- Equipe de Desenvolvimento: Mariana Júlia Estevam Corrêa, Gabriel Silveira, Carlos Eduardo Favilla Lobo,  Gabriel Miranda, Natalia Liberato;
+- Equipe de Design: Mariana Júlia Estevam Corrêa, Gabriel Silveira, Carlos Eduardo Favilla Lobo, Gabriel Miranda, Natalia Liberato.
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
