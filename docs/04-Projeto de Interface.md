@@ -47,5 +47,9 @@ Caso o usuário deseje, ele também poderá alter as configurações de sua cont
 
 ![Wireframe opções](./img/path-opções.png)
 
+## Protótipo
+
+Um protótipo interativo do Wireframe foi criado para melhor visualização, para vê-lo, <a href="https://marvelapp.com/prototype/ef8c41g/screen/91554999"> clique aqui!</a>
+
 
 
