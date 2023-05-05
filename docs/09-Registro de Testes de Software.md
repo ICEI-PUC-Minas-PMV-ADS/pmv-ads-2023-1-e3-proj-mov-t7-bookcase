@@ -126,4 +126,4 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 
 A maioria dos testes de softwere foram bem sucedidos sem a  detecção de problemas na aplicação restando apenas aperfeiçoa-los para melhor aproveitamento e experiencia do usúario.
 
-Assim, a aplicação se provou promissora do ponto de vista tecnico uma vez que apresenta grande potencial de uso por parte de estudantes em todos os niveis, merecendo ser continuamente aprimorada.
+Assim, a aplicação se provou promissora do ponto de vista técnico uma vez que apresenta grande potencial de uso por parte de estudantes em todos os niveis, merecendo ser continuamente aprimorada.
