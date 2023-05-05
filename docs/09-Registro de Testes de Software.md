@@ -36,7 +36,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||7 - Clicar em logout |
 |`Critério de Êxito` | Logout efetuado com sucesso |
 |Resultado:  | |
-|Evidência:  | |
+|Evidência:  |https://www.loom.com/share/abe41792aa1a42da80f1ce95204d6626 |
 
 
 | Casos de Teste | CT-03 - Efetuar cadastro na aplicação |
