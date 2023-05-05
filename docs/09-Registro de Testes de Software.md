@@ -50,7 +50,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||4 - Clicar em "Cadastrar" |
 ||5 - Clicar no botão "Cadastrar" |
 |`Critério de Êxito` | O usuário consegue se cadastrar na aplicação e efetuar o login. |
-|Resultado:  ||
+|Resultado:  |https://www.loom.com/share/664cbf8ec21a4a5c86557c2199c1c7a1|
 |Evidência:  | |
 
 
