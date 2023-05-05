@@ -85,7 +85,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||6 - Escolher uma obra para leitura |
 ||7 - Clicar na obra e automaticamente ser redirecionado para pagina de download da obra  |
 |`Critério de Êxito` | Efetuar o download da obra |
-|Resultado:  ||
+|Resultado:  |https://www.loom.com/share/100653c8636b4d7598347d2a91456da0|
 |Evidência:  | |
 
 # Relatório Geral do Teste de Softwere
