@@ -88,6 +88,22 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Resultado:  |Aplicação concluida com sucesso parcialmente pois embora tenha sido possivel acessar a obra não foi possivel efetuar seu download|
 |Evidência:  | https://www.loom.com/share/100653c8636b4d7598347d2a91456da0|
 
+| Casos de Teste | CT-06 - Pesquisar Obra|
+|--------------------|------------------------------------|
+|`Requisitos Associados` | RF - 002 A aplicação deve permitir ao usuário buscar uma obras pelo seu nome. |
+|`Objetivo do teste` | Testar se o usuario consegue baixar uma obra determinada para leitura |
+|`Passos` | 
+||1 - Acessar o aplicativo móvel |
+||2 - Clicar em "Entrar"|
+||3 - Informar o Usuário e Senha |
+||4 - Clicar no botão "Entrar" |
+||5 - Acessar a tela inicial |
+||6 - Clicar na lupa e digitar o nome da obra |
+||7 - Aguardar a plicação responder com o surgimento da obra pesquisada |
+|`Critério de Êxito` | A obra pesquisada aparecerá na tela do usuário |
+|Resultado:  |Aplicação concluida com sucesso |
+|Evidência:  ||
+
 # Relatório Geral do Teste de Softwere
 
 A maioria dos testes de softwere foram bem sucedidos sem a  detecção de problemas na aplicação restando apenas aperfeiçoa-los para melhor aproveitamento e experiencia do usúario.
