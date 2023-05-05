@@ -19,7 +19,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||3 - Clicar em "Entrar" |
 |`Critério de Êxito` | O usuário conseguiu entrar logar na aplicação. |
 |Resultado:  | |
-|Evidência:  | |
+|Evidência:  |https://www.loom.com/share/feb664c6653a48dd8e8146291e4107d4 |
 
 
 | Casos de Teste | CT-02 - Filtrar por categorias |
