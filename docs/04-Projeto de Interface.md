@@ -24,11 +24,28 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas d
 
 Nesta seção será apresentado como o projeto será utilizado pelo usuário, com o passo a passo de sequência de telas para cada ação específica, por fim, uma visão geral da aplicação.
 
-https://www.figma.com/file/oYNEIYlhLfDBsSzojBLFGY/Projeto-Livros-Wireframe?node-id=0-1&t=PWivWaknxU2HM83l-0
+### Login e Criação de novo usuário
+
+Inicialmente na aplicação, o usuário é apresentado com a opção de entrar com seus dados de login, bem como, se não possuir uma conta, de criar uma conta nova para seu uso, como vemos abaixo: <br/>
+
+![Wireframe login-novo usuário](./img/path-login-registro.png)
+
+### Download de uma obra
+
+Realizando o login com sucesso, o usuário será direcionado para a tela "Home", onde terá acesso ao acervo de obras cadastradas pelos usuários da plataforma, assim como as obras que ele próprio cadastrou. Se interessando por uma obra, ele poderá clicar sobre o card correspondente que o direcionará para a página da obra, que contem um breve resumo e a opção para o download do arquivo.
+
+![Wireframe cadastro de obra](./img/path-login-download.png)
+
+### Cadastro de uma obra
+
+Se o usuário souber de uma obra que é de domínio público e que ainda não está disponível na plataforma, ele mesmo poderá torná-la disponível para outros usuários. Na tela "Home" há a opção de "cadastrar obra", que direcionará o usuário para o ambiente de cadastro de obras. Nesse ambiente, o usuário deverá, então, fornecer alguns dados sobre a nova obra a ser disponibilizada, tais como: Título, nome do autor, uma breve descrição sobre a obra e o link para download, tal como demonstrado abaixo: 
+![Wireframe login-download](./img/path-cadastro-obra.png)
+
+### Alterar configurações da conta
+
+Caso o usuário deseje, ele também poderá alter as configurações de sua conta, tal como sua senha, por exemplo. Para tanto, na tela "Home", haverá um ícone de engrenagem (já muito utilizado como um sinônimo de "opções" ou "configuração", que remeterá o usuário ao um ambiente em que ele poderá alterar algumas opções referentes à sua conta.
+
+![Wireframe opções](./img/path-opções.png)
 
 
- ## Protótipo
 
-No link abaixo é possivel conferir o protótipo navegável da solução.
-
-https://www.figma.com/file/RQ6FWnteHF67oNJlu2DAdM/Projeto-Livros-Prot%C3%B3tipo?node-id=0-1&t=VziSotg1ee4S087C-0
