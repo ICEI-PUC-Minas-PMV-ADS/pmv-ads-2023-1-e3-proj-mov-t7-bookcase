@@ -18,7 +18,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||2 - Inserir os dados solicitados (e-mail e senha) |
 ||3 - Clicar em "Entrar" |
 |`Critério de Êxito` | O usuário conseguiu entrar logar na aplicação. |
-|Resultado:  | |
+|Resultado:  |Aplicação concluida com sucesso |
 |Evidência:  |https://www.loom.com/share/feb664c6653a48dd8e8146291e4107d4 |
 
 
@@ -35,7 +35,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||5 - Acessar a tela inicial |
 ||7 - Clicar em logout |
 |`Critério de Êxito` | Logout efetuado com sucesso |
-|Resultado:  | |
+|Resultado:  |Aplicação concluida com sucesso |
 |Evidência:  |https://www.loom.com/share/abe41792aa1a42da80f1ce95204d6626 |
 
 
@@ -50,8 +50,8 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||4 - Clicar em "Cadastrar" |
 ||5 - Clicar no botão "Cadastrar" |
 |`Critério de Êxito` | O usuário consegue se cadastrar na aplicação e efetuar o login. |
-|Resultado:  |https://www.loom.com/share/664cbf8ec21a4a5c86557c2199c1c7a1|
-|Evidência:  | |
+|Resultado:  |Aplicação concluida com sucesso |
+|Evidência:  |https://www.loom.com/share/664cbf8ec21a4a5c86557c2199c1c7a1| |
 
 
 | Casos de Teste | CT-04 - Fazer upload, visualizar upload de documentos |
@@ -69,7 +69,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||8 - Selecionar o arquivo desejado |
 ||9 - Clicar no botão "Ok" |
 |`Critério de Êxito` | Documento cadastrado com sucesso. |
-|Resultado:  ||
+|Resultado:  |Aplicação concluida com sucesso|
 |Evidência:  |https://www.loom.com/share/77e22daf5d0a4fbca250a5b2e2b7eb2a |
 
 | Casos de Teste | CT-05 - Acessar obra para leitura|
@@ -85,8 +85,8 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||6 - Escolher uma obra para leitura |
 ||7 - Clicar na obra e automaticamente ser redirecionado para pagina de download da obra  |
 |`Critério de Êxito` | Efetuar o download da obra |
-|Resultado:  |https://www.loom.com/share/100653c8636b4d7598347d2a91456da0|
-|Evidência:  | |
+|Resultado:  |Aplicação concluida com sucesso parcialmente pois embora tenha sido possivel acessar a obra não foi possivel efetuar seu download|
+|Evidência:  | https://www.loom.com/share/100653c8636b4d7598347d2a91456da0|
 
 # Relatório Geral do Teste de Softwere
 
