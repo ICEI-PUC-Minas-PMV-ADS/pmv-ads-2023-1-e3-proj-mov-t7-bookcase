@@ -12,16 +12,12 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 | Casos de Teste | CT-01 - Acessar tela de login e cadastro de usuário |
 |--------------------|------------------------------------|
 |`Requisitos Associados` | RF-001 - O sistema terá tela de Login e senha // RNF-005 - A plataforma interativa deve permitir o acesso apenas de usuários cadastrados |
-|`Objetivo do teste` | Testar o acesso a tela de login, criar um usário e senha e testar a recuperação de senha |
+|`Objetivo do teste` | Testar o acesso a tela de login, inserir e- mail e senha e acessar a aplicação |
 |`Passos` | 
 ||1 - Acessar o aplicativo móvel |
-||2 - Clicar em "Não possui uma conta? Cadastre-se" |
-||3 - Preencher os campos obrigatórios (Nome, Ultimo nome, E-mail, Username, Data de Nascimento, Crie uma senha, Confirme sua senha) |
-||4 - Clicar em "Cadastrar" |
-||5 - Clicar em "Esqueceu sua senha?" |
-||6 - Preencher o campo com "E-mail ou usuário" |
-||7 - Clicar no botão "Enviar" |
-|`Critério de Êxito` | O usuário criou um login e senha e conseguiu recuperar a senha. |
+||2 - Inserir os dados solicitados (e-mail e senha) |
+||3 - Clicar em "Entrar" |
+|`Critério de Êxito` | O usuário conseguiu entrar logar na aplicação. |
 |Resultado:  | |
 |Evidência:  | |
 
@@ -44,9 +40,40 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Evidência:  | |
 
 
-| Casos de Teste | CT-03 - Fazer upload, visualizar upload de documentos |
+| Casos de Teste | CT-02 - Logout|
 |--------------------|------------------------------------|
-|`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-008 - A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada juntamente com a imagem da capa |
+|`Requisitos Associados` | RF - 009 A aplicação permite o logout de usuário |
+|`Objetivo do teste` | Testar o acesso a tela de login e efetuar logout |
+|`Passos` | 
+||1 - Acessar o aplicativo móvel |
+||2 - Clicar em "Entrar"|
+||3 - Informar o Usuário e Senha |
+||4 - Clicar no botão "Entrar" |
+||5 - Acessar a tela inicial |
+||7 - Clicar em logout |
+|`Critério de Êxito` | Logout efetuado com sucesso |
+|Resultado:  | |
+|Evidência:  | |
+
+
+| Casos de Teste | CT-03 - Efetuar cadastro na aplicação |
+|--------------------|------------------------------------|
+|`Requisitos Associados` | RNF-005 - A plataforma interativa deve permitir o acesso apenas de usuários cadastrados  |
+|`Objetivo do teste` | Testar o acesso a tela de login, cadastrar na aplicação |
+|`Passos` | 
+||1 - A1 - Acessar o aplicativo móvel |
+||2 - Clicar em "Não possui uma conta? Cadastre-se aqui" |
+||3 - Preencher os campos obrigatórios (Nome, E-mail,  senha) |
+||4 - Clicar em "Cadastrar" |
+||5 - Clicar no botão "Cadastrar" |
+|`Critério de Êxito` | O usuário consegue se cadastrar na aplicação e efetuar o login. |
+|Resultado:  ||
+|Evidência:  | |
+
+
+| Casos de Teste | CT-04 - Fazer upload, visualizar upload de documentos |
+|--------------------|------------------------------------|
+|`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-008 - A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada |
 |`Objetivo do teste` | Cadastro de documentos |
 |`Passos` | 
 ||1 - Acessar o aplicativo móvel |
@@ -56,45 +83,25 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||5 - Clicar no botão " Nova Obra " |
 ||6 - Preencher os campos obrigatórios |
 ||7 - Clicar no botão "Inserir" | 
-||8 - Selecionar a categoria desejada para cadastro |
-||9 - Preencher todas as informações necessárias |
-||10 - Clicar no botão "Ok" |
+||8 - Selecionar o arquivo desejado |
+||9 - Clicar no botão "Ok" |
 |`Critério de Êxito` | Documento cadastrado com sucesso. |
-|Resultado:  | |
-|Evidência:  | |
-
-
-| Casos de Teste | CT-04 - Recomendações de livros e criar uma lista de livros para leitura |
-|--------------------|------------------------------------|
-|`Requisitos Associados` | RF-005 | A aplicação deve permitir o usuário acessar um feed de recomendações de livros // RF-007 A aplicação deve permitir o usuário criar uma lista de livros para ler mais tarde.                                                                     |
-|`Objetivo do teste` | Recomendação de livros e lista para leitura  |
-|`Passos` | 
-||1 - Acessar o aplicativo móvel |
-||2 - Clicar em "Entrar" |
-||3 - Informar o Usuário e Senha |
-||4 - Clicar no botão "Entrar" |
-||5 - Ver recomendações na pagina inicial|
-||5 - Clicar em "Criar Lista"|
-||5 - Selecionar livros que deseja |
-||5 - Clicar em "Ok" |
-|`Critério de Êxito` | Recomendações visualizadas e Lista criada com sucesso. |
 |Resultado:  ||
 |Evidência:  | |
 
-
-| Casos de Teste | CT-05 - Logout|
+| Casos de Teste | CT-05 - Acessar obra para leitura|
 |--------------------|------------------------------------|
-|`Requisitos Associados` | RF - 009 A aplicação permite o logout de usuário |
-|`Objetivo do teste` | Testar o acesso a tela de login e efetuar logout |
+|`Requisitos Associados` | RF - 003 A A aplicação deve permitir ao usuário baixar uma obra pesquisada para leitura |
+|`Objetivo do teste` | Testar se o usuario consegue baixar uma obra determinada para leitura |
 |`Passos` | 
 ||1 - Acessar o aplicativo móvel |
 ||2 - Clicar em "Entrar"|
 ||3 - Informar o Usuário e Senha |
 ||4 - Clicar no botão "Entrar" |
-||5 - Clicar no botão " Filtrar " |
-||6 - Acessar a tela inicial |
-||7 - Clicar em logout |
-|`Critério de Êxito` | Logout efetuado com sucesso |
+||5 - Acessar a tela inicial |
+||6 - Escolher uma obra para leitura |
+||7 - Clicar na obra e automaticamente ser redirecionado para pagina de download da obra  |
+|`Critério de Êxito` | Efetuar o download da obra |
 |Resultado:  ||
 |Evidência:  | |
 
