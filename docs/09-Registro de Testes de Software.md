@@ -70,7 +70,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||9 - Clicar no botão "Ok" |
 |`Critério de Êxito` | Documento cadastrado com sucesso. |
 |Resultado:  ||
-|Evidência:  | |
+|Evidência:  |https://www.loom.com/share/77e22daf5d0a4fbca250a5b2e2b7eb2a |
 
 | Casos de Teste | CT-05 - Acessar obra para leitura|
 |--------------------|------------------------------------|
