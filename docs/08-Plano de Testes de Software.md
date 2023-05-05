@@ -48,12 +48,28 @@ Apresentamos abaixo os cenários de testes elaborados para a realização dos te
 ||2 - Clicar em "Entrar" |
 ||3 - Informar o Usuário e Senha | 
 ||4 - Clicar no botão "Entrar" |
-||5 - Clicar no botão " Nova Obra " |
+||5 - Clicar no botão " livros " |
 ||6 - Preencher os campos obrigatórios |
-||7 - Clicar no botão "Inserir" | 
-||8 - Selecionar o arquivo desejado |
-||9 - Clicar no botão "Ok" |
+||7 - Clicar no botão "Adicionar" | 
+||8 - Voltar a pagina inicial e confirmar que a obra foi cadastrada |
 |`Critério de Êxito` | Documento cadastrado com sucesso. |
+
+| Casos de Teste | CT-04 - Fazer upload,  e excluir obra cadastrada |
+|--------------------|------------------------------------|
+|`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-008 - A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada |
+|`Objetivo do teste` | Cadastro de documentos |
+|`Passos` | 
+||1 - Acessar o aplicativo móvel |
+||2 - Clicar em "Entrar" |
+||3 - Informar o Usuário e Senha | 
+||4 - Clicar no botão "Entrar" |
+||5 - Clicar no botão " livros " |
+||6 - Preencher os campos obrigatórios |
+||7 - Clicar no botão "Adicionar" | 
+||8 - Voltar a pagina inicial e confirmar que a obra foi cadastrada |
+||10 - Clicar no botao "Livros"  |
+||9 - Encontrar a obra que deseja excluir e clicar em "excluir" |
+|`Critério de Êxito` | Documento excluido com sucesso. |
 
 | Casos de Teste | CT-05 - Acessar obra para leitura|
 |--------------------|------------------------------------|
