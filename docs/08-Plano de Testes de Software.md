@@ -54,7 +54,7 @@ Apresentamos abaixo os cenários de testes elaborados para a realização dos te
 ||8 - Voltar a pagina inicial e confirmar que a obra foi cadastrada |
 |`Critério de Êxito` | Documento cadastrado com sucesso. |
 
-| Casos de Teste | CT-04 - Fazer upload,  e excluir obra cadastrada |
+| Casos de Teste | CT-05 - Fazer upload,  e excluir obra cadastrada |
 |--------------------|------------------------------------|
 |`Requisitos Associados` | RF-004 - A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo // RF-008 - A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada |
 |`Objetivo do teste` | Cadastro de documentos |
@@ -71,7 +71,7 @@ Apresentamos abaixo os cenários de testes elaborados para a realização dos te
 ||9 - Encontrar a obra que deseja excluir e clicar em "excluir" |
 |`Critério de Êxito` | Documento excluido com sucesso. |
 
-| Casos de Teste | CT-05 - Acessar obra para leitura|
+| Casos de Teste | CT-06 - Acessar obra para leitura|
 |--------------------|------------------------------------|
 |`Requisitos Associados` | RF - 003 A A aplicação deve permitir ao usuário baixar uma obra pesquisada para leitura |
 |`Objetivo do teste` | Testar se o usuario consegue baixar uma obra determinada para leitura |
@@ -85,7 +85,7 @@ Apresentamos abaixo os cenários de testes elaborados para a realização dos te
 ||7 - Clicar na obra e automaticamente ser redirecionado para pagina de download da obra  |
 |`Critério de Êxito` | Efetuar o download da obra |
 
-| Casos de Teste | CT-06 - Pesquisar Obra|
+| Casos de Teste | CT-07 - Pesquisar Obra|
 |--------------------|------------------------------------|
 |`Requisitos Associados` | RF - 002 A aplicação deve permitir ao usuário buscar uma obras pelo seu nome. |
 |`Objetivo do teste` | Testar se o usuario consegue baixar uma obra determinada para leitura |
