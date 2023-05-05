@@ -22,23 +22,6 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 |Evidência:  |https://www.loom.com/share/feb664c6653a48dd8e8146291e4107d4 |
 
 
-| Casos de Teste | CT-02 - Filtrar por categorias |
-|--------------------|------------------------------------|
-|`Requisitos Associados` | RF-003 -  A aplicação deve permitir ao usuário buscar uma lista de obras baseado em um gênero (categorias) //  RF-002 - A aplicação deve permitir ao usuário buscar uma lista de obras baseado em um formato |
-|`Objetivo do teste` | Testar a filtragem por categorias |
-|`Passos` | 
-||1 - Acessar o aplicativo móvel |
-||2 - Clicar em "Entrar"|
-||3 - Informar o Usuário e Senha |
-||4 - Clicar no botão "Entrar" |
-||5 - Clicar no botão " Filtrar " |
-||6 - Clicar no botão "Categorias" |
-||7 - Informar o título da categoria e o tipo (HQ,Livro, etc / Romance, Humor e etc.)|
-||8 - Clicar no botão "Inserir categoria"  |
-|`Critério de Êxito` | As categorias foram filtradas. |
-|Resultado:  | |
-|Evidência:  | |
-
 
 | Casos de Teste | CT-02 - Logout|
 |--------------------|------------------------------------|
