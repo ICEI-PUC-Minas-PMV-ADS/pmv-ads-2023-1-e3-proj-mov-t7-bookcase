@@ -102,7 +102,7 @@ Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
 ||7 - Aguardar a plicação responder com o surgimento da obra pesquisada |
 |`Critério de Êxito` | A obra pesquisada aparecerá na tela do usuário |
 |Resultado:  |Aplicação concluida com sucesso |
-|Evidência:  ||
+|Evidência:  |https://www.loom.com/share/1c232bc37cbb4f94b069991e4b974a0f|
 
 # Relatório Geral do Teste de Softwere
 
