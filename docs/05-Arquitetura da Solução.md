@@ -27,11 +27,11 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Tecnologias Utilizadas
 
-# Expo Dev
-# React
-# React Native
-# JSON
-# JavaScript XML (JSX)
+* Expo Dev
+* React
+* React Native
+* JSON
+* JavaScript XML (JSX)
 
 ## Hospedagem
 
