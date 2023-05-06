@@ -69,6 +69,7 @@ Por exemplo, na função de verificação de permissão, checkDeletePermission, 
 
 Por derradeiro abaixo é demonstrado em video realizado nos testes de softwere q o funcionamento do login realizado por um usuário:
 
+https://www.loom.com/share/feb664c6653a48dd8e8146291e4107d4
 
 
 
