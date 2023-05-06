@@ -48,4 +48,29 @@ por meio da função bcrypt.compare(password, rows[0].password).
 
 ![WhatsApp Image 2023-05-06 at 17 39 05](https://user-images.githubusercontent.com/102702197/236647600-21f77163-d332-481d-b8fb-7e9e1e0a3cc6.jpeg)
 
+Se a senha informada for igual ao hash armazenado, é gerado um token de autenticação 
+por meio da função jwt.sign({ id: rows[0].id, email: rows[0].email }, secret) e esse token é retornado para o usuário.
+
+![WhatsApp Image 2023-05-06 at 17 39 31](https://user-images.githubusercontent.com/102702197/236647630-bb6d21ee-3613-4152-89aa-e16fd7a8d7bc.jpeg)
+
+e a senha informada não for 
+igual ao hash armazenado, uma exceção é lançada e uma mensagem de erro é retornada ao usuário. Se o usuário não for encontrado, uma exceção é 
+lançada e uma mensagem de erro é retornada ao usuário.
+
+* Em outras rotas:
+
+No código de autenticação, a função authenticateToken é um middleware que verifica se o token JWT fornecido está correto e, em seguida, define a propriedade userEmail do objeto req. Isso permite que outras rotas usem a propriedade userEmail para identificar o usuário autenticado.
+
+Por exemplo, na função de verificação de permissão, checkDeletePermission, a rota de exclusão de livros é protegida pelo middleware authenticateToken, que garante que apenas usuários autenticados possam acessá-la. Em seguida, a função verifica se o livro que o usuário está tentando excluir pertence ao usuário autenticado. Se o usuário não tiver permissão para excluir o livro, a função retorna um código de status HTTP 403.
+
+![WhatsApp Image 2023-05-06 at 17 43 40](https://user-images.githubusercontent.com/102702197/236647669-f08fb49a-ed15-4915-8f85-d6d54cc42d99.jpeg)
+
+![WhatsApp Image 2023-05-06 at 17 43 40 (1)](https://user-images.githubusercontent.com/102702197/236647685-94784f53-40b5-4267-99e3-d5f58a3334aa.jpeg)
+
+Por derradeiro abaixo é demonstrado em video realizado nos testes de softwere q o funcionamento do login realizado por um usuário:
+
+
+
+
+
 
