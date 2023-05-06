@@ -35,3 +35,17 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Hospedagem
 
+## Evidências de Implementação da Autenticação
+
+* Tela de Login:
+
+A autenticação do login nesse código está sendo feita por meio do método authenticateUser(email, password) do módulo auth.js.
+
+Esse método recebe como parâmetros o email e a senha informados pelo usuário e executa uma busca no banco de dados para verificar se existe 
+um usuário com o email informado. Caso o usuário seja encontrado, o método compara a senha informada com o hash armazenado no banco de dados 
+por meio da função bcrypt.compare(password, rows[0].password).
+
+
+![WhatsApp Image 2023-05-06 at 17 39 05](https://user-images.githubusercontent.com/102702197/236647600-21f77163-d332-481d-b8fb-7e9e1e0a3cc6.jpeg)
+
+
