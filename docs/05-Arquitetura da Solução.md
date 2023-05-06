@@ -35,6 +35,8 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Hospedagem
 
+Explique como a hospedagem e o lançamento da plataforma foi feita.
+
 ## Evidências de Implementação da Autenticação
 
 * Tela de Login:
@@ -71,7 +73,7 @@ Por derradeiro abaixo é demonstrado em video realizado nos testes de softwere q
 
 https://www.loom.com/share/feb664c6653a48dd8e8146291e4107d4
 
-
+## Qualidade de Software
 
 
 
