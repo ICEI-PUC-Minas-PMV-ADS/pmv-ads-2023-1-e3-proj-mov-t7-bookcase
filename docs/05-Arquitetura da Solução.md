@@ -35,8 +35,8 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Hospedagem
 
-Website e app mobile : 
-Banco de Dados e Back-End : Microsoft Azure
+* Website e app mobile : 
+* Banco de Dados e Back-End : MySQL, Microsoft Azure
 
 ## Evidências de Implementação da Autenticação
 
