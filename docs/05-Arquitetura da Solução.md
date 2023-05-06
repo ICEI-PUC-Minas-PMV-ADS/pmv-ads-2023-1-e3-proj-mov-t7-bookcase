@@ -35,7 +35,8 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+Website e app mobile : 
+Banco de Dados e Back-End : Microsoft Azure
 
 ## Evidências de Implementação da Autenticação
 
@@ -75,5 +76,14 @@ https://www.loom.com/share/feb664c6653a48dd8e8146291e4107d4
 
 ## Qualidade de Software
 
+O modelo de qualidade de software da ISO/IEC 25010 é composto por oito atributos ou características. São elas:
 
+* Adequação Funcional
+* Eficiência de performance
+* Compatibilidade
+* Usabilidade 
+* Confiabilidade 
+* Segurança 
+* Manutenibilidade
+* Portabilidade
 
