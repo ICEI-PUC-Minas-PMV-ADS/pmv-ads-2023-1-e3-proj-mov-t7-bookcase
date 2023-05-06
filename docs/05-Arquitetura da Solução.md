@@ -70,7 +70,7 @@ Por exemplo, na função de verificação de permissão, checkDeletePermission, 
 
 ![WhatsApp Image 2023-05-06 at 17 43 40 (1)](https://user-images.githubusercontent.com/102702197/236647685-94784f53-40b5-4267-99e3-d5f58a3334aa.jpeg)
 
-Por derradeiro abaixo é demonstrado em video realizado nos testes de softwere q o funcionamento do login realizado por um usuário:
+Por derradeiro abaixo é demonstrado em video realizado nos testes de softwere o funcionamento do login realizado por um usuário:
 
 https://www.loom.com/share/feb664c6653a48dd8e8146291e4107d4
 
