@@ -16,7 +16,7 @@
 * Gabriel Miranda 
 * Gabriel Silveira
 * Thamara Machado Rocha ✝️
-* Natalia Liberato
+* Nathália Liberato
 
 
 ## Professor
