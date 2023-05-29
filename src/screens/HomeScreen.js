@@ -87,12 +87,19 @@ const HomeScreen = ({ navigation }) => {
     }
   };
 
+  const handleConfigIconPress = () => {
+    navigation.navigate("Config");
+  };
+
   return (
     <View style={styles.container}>
       {/* Barra de navegação */}
       <View style={styles.navbar}>
         <TouchableOpacity style={styles.navItem}>
-          <TouchableOpacity style={styles.navItem}>
+          <TouchableOpacity
+            style={styles.navItem}
+            onPress={handleConfigIconPress}
+          >
             <AntDesign name="setting" size={24} color="black" />
           </TouchableOpacity>
           <TouchableOpacity
