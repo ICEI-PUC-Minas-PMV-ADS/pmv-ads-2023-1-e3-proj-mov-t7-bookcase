@@ -5,6 +5,7 @@ import RegisterScreen from "./screens/RegisterScreen";
 import HomeScreen from "./screens/HomeScreen";
 import Atualizar from "./screens/Atualizar";
 import BookUpScreen from "./screens/BookUpScreen";
+import ConfigScreen from "./screens/ConfigScreen";
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ const MainStack = () => {
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Atualizar" component={Atualizar} />
       <Stack.Screen name="Upload" component={BookUpScreen} />
+      <Stack.Screen name="Config" component={ConfigScreen} />
     </Stack.Navigator>
   );
 };

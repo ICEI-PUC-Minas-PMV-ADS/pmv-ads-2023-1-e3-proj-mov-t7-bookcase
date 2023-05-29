@@ -65,4 +65,50 @@ async function authenticateUser(email, password) {
   }
 }
 
-module.exports = { registerUser, authenticateUser };
+async function updateEmail(userEmail, newEmail) {
+  try {
+    // Atualiza o email na tabela de usuários
+    const result = await connection.query(
+      "UPDATE users SET email = ? WHERE email = ?",
+      [newEmail, userEmail]
+    );
+
+    if (result[0].affectedRows === 0) {
+      throw new Error("Email não encontrado.");
+    }
+
+    return "Email atualizado com sucesso.";
+  } catch (error) {
+    console.log(error);
+    throw new Error("Erro ao atualizar o email.");
+  }
+}
+
+async function updatePassword(userEmail, newPassword) {
+  try {
+    // Gera um hash da nova senha do usuário
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+
+    // Atualiza a senha do usuário no banco de dados
+    const result = await connection.query(
+      "UPDATE users SET password = ? WHERE email = ?",
+      [hashedPassword, userEmail]
+    );
+
+    if (result.affectedRows === 0) {
+      throw new Error("Não foi possível atualizar a senha do usuário.");
+    }
+
+    return { message: "Senha atualizada com sucesso." };
+  } catch (error) {
+    console.log(error);
+    throw new Error("Erro ao atualizar a senha do usuário.");
+  }
+}
+
+module.exports = {
+  registerUser,
+  authenticateUser,
+  updateEmail,
+  updatePassword,
+};
