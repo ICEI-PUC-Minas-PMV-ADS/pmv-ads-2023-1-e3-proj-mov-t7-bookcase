@@ -1,6 +1,11 @@
 # Template Padrão da Aplicação
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+A seguir apresentaremos o Template padrão que foi utilizado no desenvolvimento da aplicação, foi feita aopção de um layout minimalista, com cores claras e visualmente agradáveis, que remetem à leitura. O design limpo também torna a experiência do usuário mais tranquila, intuitiva e agradável.
+
+O desenho básico da estrutura, que foi utilizado em todas as telas do aplicativo, é formado por um cabeçalho: que ora contém o título da aplicação ora um bloco com ícones de botões para se acessar funcionalidades do sistema; e também um corpo central, que contem as opções da tela em que se encontra: lista de livros disponíveis, possibilidades de alterações do usuário ou cadastro de novas obras.
+
+![Tela de Login](./img/login-screen.png)
+<
 
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
