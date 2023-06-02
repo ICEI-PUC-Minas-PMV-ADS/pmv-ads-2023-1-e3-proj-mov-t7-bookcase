@@ -1,15 +1,13 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
+## Quadro atual das contribuições dos membros do time:
 
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
+* Carlos Eduardo Favilla Lobo : Especificação do projeto (casos de uso, requisitos e restrições), Projeto de interface e Arquitetuta da Solução (diagramas ER, classes), Programação de Funcionalidades (Criação da navegação do app, telas de cadastro de obra, alteração de cadastro e exclusão de obra)  validação de formulários, implementação do banco de dados. 
 
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
+* Mariana Júlia Estevam Corrêa : Elaboração da Documentação de Contexto, Metodologia (tecnologias, ferramentas, gerenciamento do projeto),  Programação de funcionalidades (implementação de layouts em telas), Criação do quadro kanban no Trello e gestão de cards com as tarefas, realização do plano de testes e registro de testes (usabilidade e Software). 
 
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+* Gabriel Silveira : Especificação do Projeto (Pesonas, Diagrama Casos de Uso), Programação de funcionalidades (implementação da tela de login), especificação do Templete Padrão da Aplicação.
+
+* Nathália Liberato : Indicadores de Desempenho, Gestaão de Qualidade do Projeto, Qualidade do Software(Tabela com métricas e pontuação).
+
+https://trello.com/b/9iTCPz3Z/untitled-board
