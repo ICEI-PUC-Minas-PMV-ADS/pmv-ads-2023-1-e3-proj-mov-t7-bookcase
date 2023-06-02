@@ -87,3 +87,5 @@ O modelo de qualidade de software da ISO/IEC 25010 é composto por oito atributo
 * Manutenibilidade
 * Portabilidade
 
+Diante disso, nossa aplicação tem como meta de desenvolvimento ser capaz de cumprir todos esses requisitos de qualidade de software para que seus stakeholders sejam corretamente satisfeitos.
+
