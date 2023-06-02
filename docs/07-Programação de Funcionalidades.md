@@ -6,7 +6,7 @@
 
 * Mariana Júlia Estevam Corrêa : Elaboração da Documentação de Contexto, Metodologia (tecnologias, ferramentas, gerenciamento do projeto),  Programação de funcionalidades (implementação de layouts em telas), Criação do quadro kanban no Trello e gestão de cards com as tarefas, realização do plano de testes e registro de testes (usabilidade e Software). 
 
-* Gabriel Silveira : Especificação do Projeto (Pesonas, Diagrama Casos de Uso), Programação de funcionalidades (implementação da tela de login), especificação do Templete Padrão da Aplicação.
+* Gabriel Silveira : Especificação do Projeto (Personas, Diagrama Casos de Uso), Programação de funcionalidades (implementação da tela de login), especificação do Templete Padrão da Aplicação.
 
 * Nathália Liberato : Indicadores de Desempenho, Gestaão de Qualidade do Projeto, Qualidade do Software(Tabela com métricas e pontuação).
 
