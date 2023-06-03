@@ -57,7 +57,7 @@ Ambiente que permite o usuário visualizar o *feed* de obras disponíveis recome
 
 ## Tela de Configurações
 <br>
-<img src="./img/config-screen.png" alt="Tela Home">
+<img src="./img/config-screen.png" alt="Tela Configurações">
 <br>
 Ambiente que permite o usuário alterar seus dados de cadastro, mudando seu e-mail e senha de acesso.
 <br>
@@ -83,7 +83,7 @@ Ambiente que permite o usuário alterar seus dados de cadastro, mudando seu e-ma
 
 ## Pesquisa por uma obra
 <br>
-<img src="./img/search-book.png" alt="Tela Home">
+<img src="./img/search-book.png" alt="Busca por obras">
 <br>
 Na tela Home, há uma ferramenta para o usuário buscar por uma obra específica ou utilizar um termo genérico relacionado à obra desejada para procurá-la no feed de obras disponíveis. No caso do exemplo, foi realizado um teste utilizando o termo "maluquinho" para buscar pela obra "O Menino Maluquinho", de Ziraldo. O teste mostra que a ferramenta de busca funciona como esperado.
 <br>
@@ -105,6 +105,34 @@ Na tela Home, há uma ferramenta para o usuário buscar por uma obra específica
 - bookRoutes.js
 - routes.js
 <br>
+
+## Cadastro de uma obra
+<br>
+<img src="./img/add-book-screen.png" alt="Tela cadastro de obras">
+<br>
+Na tela Home, há um ícone que direciona para o ambiente de cadastro de obras. Nesse ambiente, há campos para a inserção de informações sobre a obra a ser cadastrada: título, autor, descrição da obra (uma breve sinopse) e o link para download. Uma vez preenchidos os campos, há o botão para adicionar a obra.
+<br>
+
+
+### Requisitos atendidos
+
+<li>RF-04 - A aplicação deve permitir a um usuário cadastrar uma obra, e remover uma obra cadastrada por ele;</li>
+<li>RF-07 - A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada;</li>
+<li>RNF-01 - A aplicação deverá ser de fácil leitura e entendimento;</li>
+<li>RNF-02 - A aplicação deve ser desenvolvida em React Native;</li>
+<li>RNF-03 - A aplicação deverá ser responsiva e poderá ser acessada em diversos dispositivos e equipamentos;</li>
+<li>RNF-04 - A aplicação deverá ser compatível com diversos navegadores;</li>         
+<li>RNF-05 - A aplicação deve permitir o acesso apenas de usuários cadastrados.</li>
+<br>
+
+<u>**Artefatos da funcionalidade**</u>
+
+- BookUpScreen.js
+- server.js
+- bookRoutes.js
+- routes.js
+<br>
+
 
 
 
