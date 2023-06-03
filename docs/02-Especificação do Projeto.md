@@ -37,13 +37,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos Funcionais
 
 | ID       | Descrição do Requisito                                                                                            | Prioridade |
-| -------- | ----------------------------------------------------------------------------------------------------------------- | ---------- |
+| --------------------| ----------------------------------------------------------------------------------------------------------------- | ---------- |
 | RF-001 | A aplicação terá tela de Login e Senha.                                                                           | MÉDIO      |
 | RF-002 | A aplicação deve permitir ao usuário buscar uma lista de obras por nome.                                          | MÉDIO      |
 | RF-003 | A aplicação deve permitir ao usuário baixar uma obra pesquisada para leitura                                      | MÉDIO      |
-| RF-004 | A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo.                             | ALTA       |
+| RF-004 | A aplicação deve permitir a um usuário cadastrar uma obra, e remover uma obra cadastrada por ele. | ALTA       |
 | RF-005 | A aplicação deve permitir o usuário acessa um feed de recomendações de livros.                                    | ALTA       |
-| RF-006 |A aplicação deve permitir o usuário alterar seus dados de cadastro.                              | ALTA       |
+| RF-006 |A aplicação deve permitir o usuário alterar seus dados de cadastro.| ALTA       |
 | RF-007 | A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada                                 | MEDIO      |
 | RF-008 | A aplicação permite o logout de usuário.                                                                          | MEDIO      |
 
