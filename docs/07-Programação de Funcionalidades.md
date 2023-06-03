@@ -1,5 +1,18 @@
 # Programação de Funcionalidades
 
+Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema com a atribuição dos requisitos atendidos.
+
+- **Tela de Login (RF–02, RF–03)**
+<br>
+![login screen](./img/login-screen.png)
+
+
+
+
+
+
+
+
 ## Quadro atual das contribuições dos membros do time:
 
 * Carlos Eduardo Favilla Lobo : Especificação do projeto (casos de uso, requisitos e restrições), Projeto de interface e Arquitetuta da Solução (diagramas ER, classes), Programação de Funcionalidades (Criação da navegação do app, telas de cadastro de obra, alteração de cadastro e exclusão de obra)  validação de formulários, implementação do banco de dados. 
