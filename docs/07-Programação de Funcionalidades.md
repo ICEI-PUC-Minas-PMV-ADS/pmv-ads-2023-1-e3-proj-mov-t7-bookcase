@@ -81,6 +81,31 @@ Ambiente que permite o usuário alterar seus dados de cadastro, mudando seu e-ma
 - routes.js
 <br>
 
+## Pesquisa por uma obra
+<br>
+<img src="./img/search-book.png" alt="Tela Home">
+<br>
+Na tela Home, há uma ferramenta para o usuário buscar por uma obra específica ou utilizar um termo genérico relacionado à obra desejada para procurá-la no feed de obras disponíveis. No caso do exemplo, foi realizado um teste utilizando o termo "maluquinho" para buscar pela obra "O Menino Maluquinho", de Ziraldo. O teste mostra que a ferramenta de busca funciona como esperado.
+<br>
+
+### Requisitos atendidos
+
+<li>RF-02 - A aplicação deve permitir ao usuário buscar uma lista de obras por nome;</li>
+<li>RNF-01 - A aplicação deverá ser de fácil leitura e entendimento;</li>
+<li>RNF-02 - A aplicação deve ser desenvolvida em React Native;</li>
+<li>RNF-03 - A aplicação deverá ser responsiva e poderá ser acessada em diversos dispositivos e equipamentos;</li>
+<li>RNF-04 - A aplicação deverá ser compatível com diversos navegadores;</li>         
+<li>RNF-05 - A aplicação deve permitir o acesso apenas de usuários cadastrados.</li>
+<br>
+
+<u>**Artefatos da funcionalidade**</u>
+
+- HomeScreen.js
+- server.js
+- bookRoutes.js
+- routes.js
+<br>
+
 
 
 
