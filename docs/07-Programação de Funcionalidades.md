@@ -17,7 +17,7 @@ Tela que permite o usuário se cadastrar na plataforma, bem como, após o cadast
 <li>RNF-03 - A aplicação deverá ser responsiva e poderá ser acessada em diversos dispositivos e equipamentos;</li>
 <li>RNF-04 - A aplicação deverá ser compatível com diversos navegadores;</li>         
 <li>RNF-05 - A aplicação deve permitir o acesso apenas de usuários cadastrados.</li>
-
+<br>
 
 <u>**Artefatos da funcionalidade**</u>
 
