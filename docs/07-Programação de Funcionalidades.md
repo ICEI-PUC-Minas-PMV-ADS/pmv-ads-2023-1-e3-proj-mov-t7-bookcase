@@ -38,7 +38,8 @@ Ambiente que permite o usuário visualizar o *feed* de obras disponíveis recome
 ### Requisitos atendidos
 
 <li>RF-03 - A aplicação deve permitir ao usuário baixar uma obra pesquisada para leitura;</li>
-<li>RF-05 - A aplicação deve permitir o usuário acessa um feed de recomendações de livros.</li>
+<li>RF-05 - A aplicação deve permitir o usuário acessa um feed de recomendações de livros;</li>
+<li>RF-08 - A aplicação permite o logout de usuário;</li>
 <li>RNF-01 - A aplicação deverá ser de fácil leitura e entendimento;</li>
 <li>RNF-02 - A aplicação deve ser desenvolvida em React Native;</li>
 <li>RNF-03 - A aplicação deverá ser responsiva e poderá ser acessada em diversos dispositivos e equipamentos;</li>
@@ -52,7 +53,35 @@ Ambiente que permite o usuário visualizar o *feed* de obras disponíveis recome
 - server.js
 - bookRoutes.js
 - routes.js
-- LoginScreen.js
+<br>
+
+## Tela de Configurações
+<br>
+<img src="./img/config-screen.png" alt="Tela Home">
+<br>
+Ambiente que permite o usuário alterar seus dados de cadastro, mudando seu e-mail e senha de acesso.
+<br>
+
+### Requisitos atendidos
+
+<li>RF-05 - A aplicação deve permitir o usuário acessa um feed de recomendações de livros,</li>
+<li>RF-06 - A aplicação deve permitir o usuário alterar seus dados de cadastro;</li>
+<li>RNF-01 - A aplicação deverá ser de fácil leitura e entendimento;</li>
+<li>RNF-02 - A aplicação deve ser desenvolvida em React Native;</li>
+<li>RNF-03 - A aplicação deverá ser responsiva e poderá ser acessada em diversos dispositivos e equipamentos;</li>
+<li>RNF-04 - A aplicação deverá ser compatível com diversos navegadores;</li>         
+<li>RNF-05 - A aplicação deve permitir o acesso apenas de usuários cadastrados.</li>
+<br>
+
+<u>**Artefatos da funcionalidade**</u>
+
+- ConfigScreen.js
+- server.js
+- bookRoutes.js
+- routes.js
+<br>
+
+
 
 
 
