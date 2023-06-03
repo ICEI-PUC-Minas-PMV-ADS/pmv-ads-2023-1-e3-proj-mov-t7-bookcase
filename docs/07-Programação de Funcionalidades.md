@@ -26,6 +26,7 @@ Tela que permite o usuário se cadastrar na plataforma, bem como, após o cadast
 - bookRoutes.js
 - routes.js
 - LoginScreen.js
+- RegisterScreen.js
 <br>
 
 ## Tela Home
@@ -125,7 +126,11 @@ Para atualizar uma obra cadastrada, basta o usuário selecioná-la, dentro do am
 <img src="./img/adding-book.png" alt="Atualizando cadastro">
 <br>
 
+Por fim, podemos ver a obra cadastrada, agora com a descrição atualizada, mostrando a funcionalidade de atualização dos cadastros de obra realizados pelo usuário.
 
+<br>
+<img src="./img/refreshed-description.png" alt="Cadastro atualizado">
+<br>
 
 ### Requisitos atendidos
 
@@ -147,25 +152,13 @@ Para atualizar uma obra cadastrada, basta o usuário selecioná-la, dentro do am
 <br>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Quadro atual das contribuições dos membros do time:
 
 * Carlos Eduardo Favilla Lobo : Especificação do projeto (casos de uso, requisitos e restrições), Projeto de interface e Arquitetuta da Solução (diagramas ER, classes), Programação de Funcionalidades (Criação da navegação do app, telas de cadastro de obra, alteração de cadastro e exclusão de obra)  validação de formulários, implementação do banco de dados. 
 
 * Mariana Júlia Estevam Corrêa : Elaboração da Documentação de Contexto, Metodologia (tecnologias, ferramentas, gerenciamento do projeto),  Programação de funcionalidades (implementação de layouts em telas), Criação do quadro kanban no Trello e gestão de cards com as tarefas, realização do plano de testes e registro de testes (usabilidade e Software). 
 
-* Gabriel Silveira : Especificação do Projeto (Personas, Diagrama Casos de Uso), Programação de funcionalidades (implementação da tela de login), especificação do Templete Padrão da Aplicação.
+* Gabriel Vinícius Silveira e Silva : Especificação do Projeto (Personas, Diagrama Casos de Uso), Programação de funcionalidades, testes de usabilidade, deploy da aplicação, construção da build do projeto para lançamento em lojas de aplicativos móveis (Google Play), Template Padrão da Aplicação.
 
 * Nathália Liberato : Indicadores de Desempenho, Gestaão de Qualidade do Projeto, Qualidade do Software(Tabela com métricas e pontuação).
 
