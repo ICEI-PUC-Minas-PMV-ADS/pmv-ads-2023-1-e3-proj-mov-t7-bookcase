@@ -4,14 +4,15 @@ A seguir apresentaremos o Template padrão que foi utilizado no desenvolvimento 
 
 O desenho básico da estrutura, que foi utilizado em todas as telas do aplicativo, é formado por um cabeçalho: que ora contém o título da aplicação ora um bloco com ícones de botões para se acessar funcionalidades do sistema; e também um corpo central, que contem as opções da tela em que se encontra: lista de livros disponíveis, possibilidades de alterações do usuário ou cadastro de novas obras.
 
-![Tela de Login](./img/login-screen.png)
-<
+Aqui vemos a tela de login da aplicação, que em seu cabeçalho possui ao título do projeto, e em seu corpo principal um bloco com campos para inserção de dados de cadastro e botões para efetivar o login ou encaminhamento para cadastro.
 
-Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+<br>
+<img src="./img/login-screen.png">
+<br>
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+A tela Home segue o mesmo conceito de cabeçalho e bloco principal. No primeiro temos o nome do ambiente: Home. No segundo um bloco com botões de logout, pesquisa por obras, cadastrar uma obra, opções, e abaixo, o feed de obras já cadastradas por outros usuários.
+
+<br>
+<img src="./img/home-screen.png" alt="Tela Home">
+<br>
+
