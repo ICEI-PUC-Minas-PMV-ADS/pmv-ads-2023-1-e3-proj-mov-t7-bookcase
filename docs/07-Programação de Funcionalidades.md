@@ -2,9 +2,32 @@
 
 Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema com a atribuição dos requisitos atendidos.
 
-- **Tela de Login (RF–02, RF–03)**
+## Tela de Login
 <br>
-![login screen](./img/login-screen.png)
+<img src="./img/login-screen.png" alt="Tela de login">
+<br>
+Tela que permite o usuário se cadastrar na plataforma, bem como, após o cadastro, fazer o login com os dados fornecidos no momento em que se cadastrou.
+<br>
+
+### Requisitos atendidos
+
+<li>RF-01 - A aplicação terá tela de Login e Senha;</li>
+<li>RNF-01 - A aplicação deverá ser de fácil leitura e entendimento;</li>
+<li>RNF-02 - A aplicação deve ser desenvolvida em React Native;</li>
+<li>RNF-03 - A aplicação deverá ser responsiva e poderá ser acessada em diversos dispositivos e equipamentos;</li>
+<li>RNF-04 - A aplicação deverá ser compatível com diversos navegadores;</li>         
+<li>RNF-05 - A aplicação deve permitir o acesso apenas de usuários cadastrados.</li>
+
+
+<u>**Artefatos da funcionalidade**</u>
+
+- App.js
+- server.js
+- bookRoutes.js
+- routes.js
+- LoginScreen.js
+
+
 
 
 
