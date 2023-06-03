@@ -43,7 +43,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-003 | A aplicação deve permitir ao usuário baixar uma obra pesquisada para leitura                                      | MÉDIO      |
 | RF-004 | A aplicação deve permitir a um usuário cadastrar e remover uma obra feita pelo mesmo.                             | ALTA       |
 | RF-005 | A aplicação deve permitir o usuário acessa um feed de recomendações de livros.                                    | ALTA       |
-| RF-006 | A aplicação deve permitir o usuário recuperar sua senha atráves do email cadastrado.                              | ALTA       |
+| RF-006 |A aplicação deve permitir o usuário alterar seus dados de cadastro.                              | ALTA       |
 | RF-007 | A aplicação deve permitir o usuário a criar uma descrição sobre a obra cadastrada                                 | MEDIO      |
 | RF-008 | A aplicação permite o logout de usuário.                                                                          | MEDIO      |
 
