@@ -16,3 +16,18 @@ A tela Home segue o mesmo conceito de cabeçalho e bloco principal. No primeiro 
 <img src="./img/home-screen.png" alt="Tela Home">
 <br>
 
+Abaixo vemos as demais telas da aplicação, respectivamente: Tela de configurações, pesquisa por uma obra, e cadastro de uma obra nova. Todas seguindo  template padrão da aplicação, com cabeçalho indicando qual o ambiente em que o usuário se encontra, e blocos de informação dividindo o conteúdo da tela, deixando as informações legíveis e a aparência limpa, organizada e agradável de se usar.
+
+<br>
+<img src="./img/config-screen.png" alt="Tela Configurações">
+<br>
+<img src="./img/search-book.png" alt="Busca por obras">
+<br>
+<img src="./img/adding-book.png" alt="Atualizando cadastro">
+<br>
+<img src="./img/refreshed-description.png" alt="Cadastro atualizado">
+<br>
+<br>
+<br>
+<br>
+<br>
