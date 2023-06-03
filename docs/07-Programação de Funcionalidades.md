@@ -113,6 +113,13 @@ Na tela Home, há uma ferramenta para o usuário buscar por uma obra específica
 Na tela Home, há um ícone que direciona para o ambiente de cadastro de obras. Nesse ambiente, há campos para a inserção de informações sobre a obra a ser cadastrada: título, autor, descrição da obra (uma breve sinopse) e o link para download. Uma vez preenchidos os campos, há o botão para adicionar a obra.
 <br>
 
+A seguir veremos o ambiente com a obra cadastrada campos preenchidos. Como exemplo foi feito o cadastro do clássico infantil O Pequeno Príncipe, do autor Antoine de Saint-Exupéry. Intencionalmente deixamos a descrição com os caracteres "kkk" como forma de demonstrar a possibilidade de atualizar as informações da obra cadastrada pelo usuário, nesse caso faremos a atualização da descrição, mas seria possível, por exemplo, atualizar o link para download, caso fosse necessário.
+
+<br>
+<img src="./img/added-book.png" alt="Obra cadastrada">
+<br>
+
+
 
 ### Requisitos atendidos
 
