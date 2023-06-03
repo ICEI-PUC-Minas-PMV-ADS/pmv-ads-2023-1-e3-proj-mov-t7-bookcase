@@ -119,6 +119,12 @@ A seguir veremos o ambiente com a obra cadastrada campos preenchidos. Como exemp
 <img src="./img/added-book.png" alt="Obra cadastrada">
 <br>
 
+Para atualizar uma obra cadastrada, basta o usuário selecioná-la, dentro do ambiente de cadastro de obras, selecionar o ícone de nuvem no canto superior direito da tela, os dados da obra serão novamente carregados para os campos parametrizados, onde o usuário poderá atualizar as informações.
+
+<br>
+<img src="./img/adding-book.png" alt="Atualizando cadastro">
+<br>
+
 
 
 ### Requisitos atendidos
