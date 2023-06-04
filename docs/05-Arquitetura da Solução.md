@@ -78,14 +78,8 @@ https://www.loom.com/share/feb664c6653a48dd8e8146291e4107d4
 
 O modelo de qualidade de software da ISO/IEC 25010 é composto por oito atributos ou características. São elas:
 
-* Adequação Funcional
-* Eficiência de performance
-* Compatibilidade
-* Usabilidade 
-* Confiabilidade 
-* Segurança 
-* Manutenibilidade
-* Portabilidade
+![Tabela PUC-1](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t7-bookcase/assets/96542702/d514aa5f-9295-4beb-ac4c-4bf68a0733da)
+
 
 Diante disso, nossa aplicação tem como meta de desenvolvimento ser capaz de cumprir todos esses requisitos de qualidade de software para que seus stakeholders sejam corretamente satisfeitos.
 
