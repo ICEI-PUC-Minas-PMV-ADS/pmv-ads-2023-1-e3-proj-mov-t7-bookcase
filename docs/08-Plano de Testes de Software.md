@@ -99,5 +99,20 @@ Apresentamos abaixo os cenários de testes elaborados para a realização dos te
 ||7 - Aguardar a plicação responder com o surgimento da obra pesquisada |
 |`Critério de Êxito` | A obra pesquisada aparecerá na tela do usuário |
 
+| Casos de Teste | CT-08 - Troca de e-mail cadastro e senha|
+|--------------------|------------------------------------|
+|`Requisitos Associados` | RF - 006 A aplicação deve permitir ao usuário alterar seus dados de cadastro. |
+|`Objetivo do teste` | Testar se o usuario consegue alterar seus dados de cadastro - senha e e-mail |
+|`Passos` | 
+||1 - Acessar o aplicativo móvel |
+||2 - Clicar em "Entrar"|
+||3 - Informar o Usuário e Senha |
+||4 - Clicar no botão "Entrar" |
+||5 - Acessar a tela inicial |
+||6 - Clicar na engrenagem (configurações) |
+||7 - Inserir os novos dados do usuario (senha e\ou e-mail) |
+||8 - A aplicação fará o logout automatico para a entrada do usuário com os novos dados fornecidos |
+|`Critério de Êxito` | A aplicação será acessada com os novos dados fornecidos |
+
 
 
