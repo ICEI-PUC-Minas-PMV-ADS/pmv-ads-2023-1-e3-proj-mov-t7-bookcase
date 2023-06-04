@@ -35,7 +35,7 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 
 ## Hospedagem
 
-* Website e app mobile : 
+* Website e app mobile : https://bookcs.netlify.app/
 * Banco de Dados e Back-End : MySQL, Microsoft Azure
 
 ## Evidências de Implementação da Autenticação
