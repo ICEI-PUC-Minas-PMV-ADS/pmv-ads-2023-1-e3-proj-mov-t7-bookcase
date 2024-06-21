@@ -1,0 +1,25 @@
+message: Please cite this software using these metadata.
+title: Projeto AMARIV
+authors:
+  - family-names: Favilla Lobo
+    given-names: Carlos Eduardo
+  - family-names: Silveira e Silva Ildefonso
+    given-names: Gabriel Vinícius
+  - family-names: Miranda
+    given-names: Gabriel
+  - family-names: Estevam Corrêa
+    given-names: Mariana Júlia
+  - family-names: Liberato
+    given-names: Nathália
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: Mangaravite
+    given-names: Vitor
+keywords:
+  - Livro
+  - Leitura
+  - Domínio Público
+
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t7-bookcase
+version: 1.0.0
+date-released: 2023-06-23
